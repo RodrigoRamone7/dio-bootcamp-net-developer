@@ -26,5 +26,3 @@ Arquivo para armazenar resumos sobre Git e Github do curso de versionamento de c
 | user.email | Configuração de email para git config|
 | Exemplo acima | git config --global user.name "email@email"|
 |-----|------|
-
-reset
