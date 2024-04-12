@@ -15,7 +15,10 @@ Arquivo para armazenar resumos sobre Git e Github do curso de versionamento de c
 | git add . | Adiciona todos os arquivos untracked|
 | git clone URL | Clona um repositório remoto|
 | git commit -m | Faz um commit com uma mensagem em string|
+| git log | mostra os commits feitos no repositório|
+|-----|------|
 | git config --global | Inicializa uma configuração glogal|
 | user.name | Configuração de username para git config|
 | user.email | Configuração de email para git config|
 | Exemplo acima | git config --global user.name "email@email"|
+|-----|------|
