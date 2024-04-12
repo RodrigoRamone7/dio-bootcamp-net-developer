@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 repositorio local
+=======
+repositorio remoto
+>>>>>>> e6246e31882ba66792cb04662fa6a516e993fb60
