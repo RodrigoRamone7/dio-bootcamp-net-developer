@@ -10,13 +10,13 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
 [Constribuindo em um Projeto Open Source no Github](https://github.com/RodrigoRamone7/dio-lab-open-source)
 
 ## todo
-### - [ ] Principios de Desenvolvimento De Aplicações
+### - [x] Principios de Desenvolvimento De Aplicações
 
     - [x] Contribuindo em um Projeto Open Source no GitHub
     - [x] Versionamento de Código com Git e GitHub
     - [x] Desafios de Projetos: Crie Um Portfólio Vencedor
     - [x] Contribuindo em um Projeto Open Source no GitHub
-    - [ ] Aula Inaugural - Coding The Future Avanade
+    - [x] Aula Inaugural - Coding The Future Avanade
 
 ### - [ ] Fundamentos do .NET
 
