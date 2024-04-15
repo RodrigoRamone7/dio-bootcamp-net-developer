@@ -1,2 +1,1 @@
-<iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=291016" frameborder="0" allowfullscreen></iframe>
-<div><a  style="font-size: 12px; text-decoration: none;" title="Create a timeline" href="https://time.graphics">Create a timeline</a></div>
+
