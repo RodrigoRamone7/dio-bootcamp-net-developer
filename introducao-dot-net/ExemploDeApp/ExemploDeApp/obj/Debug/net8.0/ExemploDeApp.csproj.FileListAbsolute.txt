@@ -1,0 +1,15 @@
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\bin\Debug\net8.0\ExemploDeApp.exe
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\bin\Debug\net8.0\ExemploDeApp.deps.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\bin\Debug\net8.0\ExemploDeApp.runtimeconfig.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\bin\Debug\net8.0\ExemploDeApp.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\bin\Debug\net8.0\ExemploDeApp.pdb
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.GeneratedMSBuildEditorConfig.editorconfig
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.AssemblyInfoInputs.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.AssemblyInfo.cs
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.csproj.CoreCompileInputs.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.sourcelink.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\refint\ExemploDeApp.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.pdb
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ExemploDeApp.genruntimeconfig.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploDeApp\ExemploDeApp\obj\Debug\net8.0\ref\ExemploDeApp.dll

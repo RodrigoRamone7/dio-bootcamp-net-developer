@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploDeApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F119E2C9-03CE-4C86-B223-404FA0AE75ED}|ExemploDeApp\\ExemploDeApp.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplodeapp\\exemplodeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F119E2C9-03CE-4C86-B223-404FA0AE75ED}|ExemploDeApp\\ExemploDeApp.csproj|solutionrelative:exemplodeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploDeApp\\ExemploDeApp\\Program.cs",
+              "RelativeDocumentMoniker": "ExemploDeApp\\Program.cs",
+              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploDeApp\\ExemploDeApp\\Program.cs",
+              "RelativeToolTip": "ExemploDeApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T19:34:45.863Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
