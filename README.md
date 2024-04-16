@@ -10,7 +10,8 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
 [Constribuindo em um Projeto Open Source no Github](https://github.com/RodrigoRamone7/dio-lab-open-source)
 
 ## todo
-### - [x] Principios de Desenvolvimento De Aplicações
+
+- [x] __*Principios de Desenvolvimento De Aplicações*__
 
     - [x] Contribuindo em um Projeto Open Source no GitHub
     - [x] Versionamento de Código com Git e GitHub
@@ -18,7 +19,7 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
     - [x] Contribuindo em um Projeto Open Source no GitHub
     - [x] Aula Inaugural - Coding The Future Avanade
 
-### - [ ] Fundamentos do .NET
+- [x] __*Fundamentos do .NET*__
 
     - [x] Introdução ao .NET
     - [x] Introdução as IDEs e Configuração de Ambiente .NET
@@ -32,7 +33,7 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
     - [ ] Desafios de Código Coding The Future Avanade l
     - [ ] Construindo um Sistema para um Estacionamento com C#
 
-### - [ ] Manipulando Dados e Objetos com .NET
+- [x] __*Manipulando Dados e Objetos com .NET*__
 
     - [ ] Propriedades, Métodos e Construtores com C#
     - [ ] Manipulando Valores com C#
@@ -42,7 +43,7 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
     - [ ] Construindo um Sistema de Hospedagem de um Hotel no C#
     - [ ] Desafios de Código Coding The Future Avanade ll
 
-### - [ ] Programação Orientada a Objetos com C#
+- [x] __*Programação Orientada a Objetos com C#*__
 
     - [ ] Introdução, Abstração e Encapsulamento com C#
     - [ ] Herança e Polimorfismo com C#
@@ -50,7 +51,7 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
     - [ ] Criando um Sistema e Abstraindo um Celular com POO em C#
     - [ ] Desafios de Código Coding The Future Avanade lll
 
-### - [ ] Programação De APIs Com Bando de Dados
+- [x] __*Programação De APIs Com Bando de Dados*__
 
     - [ ] Introdução Banco de Dados
     - [ ] SQL SERVER - Dominando Tabelas e Tipos de Dados
@@ -62,7 +63,7 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
     - [ ] Conhecendo e Instalando o Docker
     - [ ] Primeiros Passos com o Docker
 
-### - [ ] Trabalhando com Desenvolvimento Orientado a Testes
+- [x] __*Trabalhando com Desenvolvimento Orientado a Testes*__
 
     - [ ] Testes Unitários com C#
     - [ ] Implementando Validações de Testes Unitários com C#
