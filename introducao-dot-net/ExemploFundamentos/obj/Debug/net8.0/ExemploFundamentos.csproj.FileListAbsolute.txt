@@ -1,0 +1,15 @@
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\bin\Debug\net8.0\ExemploFundamentos.exe
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\bin\Debug\net8.0\ExemploFundamentos.deps.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\bin\Debug\net8.0\ExemploFundamentos.runtimeconfig.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\bin\Debug\net8.0\ExemploFundamentos.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\bin\Debug\net8.0\ExemploFundamentos.pdb
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.GeneratedMSBuildEditorConfig.editorconfig
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.AssemblyInfoInputs.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.AssemblyInfo.cs
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.csproj.CoreCompileInputs.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.sourcelink.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\refint\ExemploFundamentos.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.pdb
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ExemploFundamentos.genruntimeconfig.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\obj\Debug\net8.0\ref\ExemploFundamentos.dll
