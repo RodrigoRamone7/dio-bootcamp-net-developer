@@ -15,7 +15,8 @@ __*Exemplo de classe em .NET*__
 
 | Sintaxe | Significado |
 |---|---|
-| `public class ClasseBase` | Declaração da classe dentro do projeto |
-| `public string NameBase { get; set; }` | Propriedade de inicialização de uma variável dentro da classe. |
+| `public class Pessoa` | Declaração de inicialização da classe dentro do projeto |
+| `public string Nome { get; set; }` | Propriedade de inicialização de uma variável string dentro da classe |
 | `{ get; set; }` | Define o comportamento desta variável na inicialização do objeto |
-| `public virtual void GetNome()` | Método da classe
+| `public void Apresentar()` | Método da classe
+| `namespace ExemploFundamenos.Models` | Caminho lógico das classes dentro do projeto
