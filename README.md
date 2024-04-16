@@ -21,7 +21,7 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
 ### - [ ] Fundamentos do .NET
 
     - [x] Introdução ao .NET
-    - [ ] Introdução as IDEs e Configuração de Ambiente .NET
+    - [x] Introdução as IDEs e Configuração de Ambiente .NET
     - [ ] Sintaxe e Tipos de Dados em C#
     - [ ] Tipos de Operadores em C#
     - [ ] Operadores Aritméticos em C#
