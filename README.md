@@ -23,8 +23,8 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
 
     - [x] Introdução ao .NET
     - [x] Introdução as IDEs e Configuração de Ambiente .NET
-    - [ ] Sintaxe e Tipos de Dados em C#
-    - [ ] Tipos de Operadores em C#
+    - [x] Sintaxe e Tipos de Dados em C#
+    - [x] Tipos de Operadores em C#
     - [ ] Operadores Aritméticos em C#
     - [ ] Conhecendo as Estruturas de Repetição em C#
     - [ ] Conhecendo a Organização de um Programa C#

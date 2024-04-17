@@ -121,4 +121,19 @@ Ao converter um valor de um tipo para outro é possível utilizar alguns método
 | `\|\|` |	OR = Ou |
 | `!` |	NOT = Não |
 
+---
+
+## Estruturas Condicionais
+
+### Estrutura if else
+Estrutura de desvia o fluxo de execução de acordo com a condição.
+
+![Estrutura if else](images/estrutura-if-else.png)
+
+### Estrutura switch case
+A estrutura switch case é recomendada para evitar estruturas if else aninhadas.
+
+![Estrutura switch case](images/estrutura-switch-case.png)
+
+---
 
