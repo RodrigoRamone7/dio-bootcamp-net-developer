@@ -32,6 +32,8 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 
 #### Tipos em C#
 
+__*Tabela de tipos*__
+
 | Tipo | Representação | Valores suportados | Valor Padrão |
 |---|---|---|---|
 | string | Uma série de caracteres | --- | --- |
@@ -47,3 +49,35 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 | uint | Valor inteiro 32 bit somente positivo | 0 até 4,294,967,295 | 0 |
 | short | Valor inteiro 16 bit | -32,768 até 32,767 | 0 |
 | ulong | Valor inteiro 64 bit somente positivo | 0 até 18,446,744,073,709,551,615 | 0 |
+
+#### Operadores em c#
+
+* __*Tabela de operadores aritméticos*__
+
+| Operador | Função |
+|---|---|
+| `=` | Atribuir valor a uma variável |
+| `+` | Soma ou concatena dois valores ou variáveis |
+| `-` | Subtrai dois valores |
+| `+=` | Soma a variavel mais um valor. Equivale a `c = c + 5`|
+| `-=` 
+
+* __*Convertendo tipos*__
+
+A conversão de tipos em C# é chamada de casting e existem duas maneiras principais de fazer está coversão. Qualquer tipo pode ser convertido e outro dentro da linguagem.
+
+__Convert__
+
+A classe `Convert.ToInt32("5")` possui métodos para conversão de tipos com tratamento de exceções. Podendo esta receber um valor `null` por exemplo e retornar `0`.
+
+__Parse__
+
+O método `int.Parse("5")` está presente dentro dos tipos e possui a função de converter valores de outros tipos no tipo em que o parse foi chamado. Este método não possui tratamento de exceções, o que leva a um erro ao ser passado um valor inesperado pelo método. Ao ser atribuido valor `null`, ocorrerá um erro e o programa será fechado.
+
+__Casting implicito__
+
+Alguns tipos suportam o casting implicito pois são tipos que cabem dentro de outro tipo. Como por exemplo o tipo `int` que pode caber dentro do `double` ou `long`, pois estes tipos suportam o tipo inteiro e casas decimais. O mesmo não pode acontecer ao contrário, pois o tipo `int` não suporta valores da ordem de valores `long` e `double`.
+
+__Convertendo de forma segura__
+
+Ao converter um valor de um tipo para outro é possível utilizar alguns métodos para tratar alguns erros. Como é o caso do método `.TryParse(a, out b);`, este método, diferente do `.Parse(a)`, vai tentar converter o valor da variável, mas caso este valor não possa ser convertido, o método retorna um valor definido pelo código `out VARIAVEL`.
