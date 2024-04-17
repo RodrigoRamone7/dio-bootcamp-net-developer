@@ -1,12 +1,18 @@
 # .NET
+---
+## Descrição
+
 É uma plataforma de desenvolvimento que utiliza a linguagem C# para desenvolvimento multiplataforma.
 
+---
 ## Versões
+
 * [Veja a linha do tempo do .NET](https://time.graphics/line/291016)
 * Atualmente a plataforma .NET está em sua versão o [.NET 8](https://dotnet.microsoft.com/pt-br/download/dotnet/7.0)
 * .NET Framework é a versão legada do .NET
-
+---
 ## Classes
+
 As classes são a estrutura mais básica de um projeto orientado a objeto. Ela parte da abstração que representa características de um objeto no mundo real
 
 #### Exemplo de classe em .NET
@@ -30,6 +36,7 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 
 `Models` representa a pasta ou pacote em que a classe está salva.
 
+---
 ## Tipos em C#
 
 ### Tabela de tipos
@@ -50,7 +57,8 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 | short | Valor inteiro 16 bit | -32,768 até 32,767 | 0 |
 | ulong | Valor inteiro 64 bit somente positivo | 0 até 18,446,744,073,709,551,615 | 0 |
 
-## Operadores em c#
+---
+## Operadores em C#
 
 ### Tabela de operadores aritméticos
 
@@ -69,6 +77,8 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 | `*=` | vezes igual |
 | `/=` | dividido igual |
 | `%=` | módulo igual |
+
+---
 
 ### Convertendo tipos
 
@@ -90,6 +100,8 @@ Alguns tipos suportam o casting implicito pois são tipos que cabem dentro de ou
 
 Ao converter um valor de um tipo para outro é possível utilizar alguns métodos para tratar alguns erros. Como é o caso do método `.TryParse(a, out b);`, este método, diferente do `.Parse(a)`, vai tentar converter o valor da variável, mas caso este valor não possa ser convertido, o método retorna um valor definido pelo código `out VARIAVEL`.
 
+---
+
 ### Tabela de operadores Condicionais
 
 | Operador Relacional | Descrição |
@@ -106,7 +118,7 @@ Ao converter um valor de um tipo para outro é possível utilizar alguns método
 |Operador Lógico |	Descrição |
 |---|---|
 | `&&` |	AND = E |
-| `||` |	OR = Ou |
+| `\|\|` |	OR = Ou |
 | `!` |	NOT = Não |
 
 
