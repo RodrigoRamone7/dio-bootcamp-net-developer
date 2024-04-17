@@ -30,9 +30,9 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 
 `Models` representa a pasta ou pacote em que a classe está salva.
 
-#### Tipos em C#
+## Tipos em C#
 
-__*Tabela de tipos*__
+### Tabela de tipos
 
 | Tipo | Representação | Valores suportados | Valor Padrão |
 |---|---|---|---|
@@ -50,34 +50,63 @@ __*Tabela de tipos*__
 | short | Valor inteiro 16 bit | -32,768 até 32,767 | 0 |
 | ulong | Valor inteiro 64 bit somente positivo | 0 até 18,446,744,073,709,551,615 | 0 |
 
-#### Operadores em c#
+## Operadores em c#
 
-* __*Tabela de operadores aritméticos*__
+### Tabela de operadores aritméticos
 
 | Operador | Função |
 |---|---|
-| `=` | Atribuir valor a uma variável |
-| `+` | Soma ou concatena dois valores ou variáveis |
-| `-` | Subtrai dois valores |
-| `+=` | Soma a variavel mais um valor. Equivale a `c = c + 5`|
-| `-=` 
+| `=` | Atribuição |
+| `+` | Soma ou concatena |
+| `-` | Subtração |
+| `*` | Multiplicação |
+| `/`  | Divisão |
+| `%` | Módulo (Resto da divisão)|
+|---|---|---|
+| `+=` | Mais igual |
+| `+=` | mais igual |
+| `-=` | menos igual |
+| `*=` | vezes igual |
+| `/=` | dividido igual |
+| `%=` | módulo igual |
 
-* __*Convertendo tipos*__
+### Convertendo tipos
 
 A conversão de tipos em C# é chamada de casting e existem duas maneiras principais de fazer está coversão. Qualquer tipo pode ser convertido e outro dentro da linguagem.
 
-__Convert__
+#### Convert
 
 A classe `Convert.ToInt32("5")` possui métodos para conversão de tipos com tratamento de exceções. Podendo esta receber um valor `null` por exemplo e retornar `0`.
 
-__Parse__
+#### Parse
 
 O método `int.Parse("5")` está presente dentro dos tipos e possui a função de converter valores de outros tipos no tipo em que o parse foi chamado. Este método não possui tratamento de exceções, o que leva a um erro ao ser passado um valor inesperado pelo método. Ao ser atribuido valor `null`, ocorrerá um erro e o programa será fechado.
 
-__Casting implicito__
+#### Casting implicito
 
 Alguns tipos suportam o casting implicito pois são tipos que cabem dentro de outro tipo. Como por exemplo o tipo `int` que pode caber dentro do `double` ou `long`, pois estes tipos suportam o tipo inteiro e casas decimais. O mesmo não pode acontecer ao contrário, pois o tipo `int` não suporta valores da ordem de valores `long` e `double`.
 
-__Convertendo de forma segura__
+#### Convertendo de forma segura
 
 Ao converter um valor de um tipo para outro é possível utilizar alguns métodos para tratar alguns erros. Como é o caso do método `.TryParse(a, out b);`, este método, diferente do `.Parse(a)`, vai tentar converter o valor da variável, mas caso este valor não possa ser convertido, o método retorna um valor definido pelo código `out VARIAVEL`.
+
+### Tabela de operadores Condicionais
+
+| Operador Relacional | Descrição |
+|---|---|
+| `==` |	Igual a |
+| `!=` |	Diferente de |
+| `>` |	Maior que |
+| `<` |	Menor que |
+| `>=` |	Maior do que ou igual a |
+| `<=` |	Menor do que ou igual a |
+
+### Tabela de operadores lógicos
+
+|Operador Lógico |	Descrição |
+|---|---|
+| `&&` |	AND = E |
+| `&#124;&#124;` |	OR = Ou |
+| `!` |	NOT = Não |
+
+
