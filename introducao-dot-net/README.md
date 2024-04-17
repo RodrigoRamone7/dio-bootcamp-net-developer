@@ -106,7 +106,7 @@ Ao converter um valor de um tipo para outro é possível utilizar alguns método
 |Operador Lógico |	Descrição |
 |---|---|
 | `&&` |	AND = E |
-| `&#124;&#124;` |	OR = Ou |
+| `||` |	OR = Ou |
 | `!` |	NOT = Não |
 
 
