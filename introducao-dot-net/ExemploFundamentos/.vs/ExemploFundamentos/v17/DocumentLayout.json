@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|solutionrelative:models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|solutionrelative:models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\models\\tabuada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|solutionrelative:models\\tabuada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,19 +22,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pessoa.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Pessoa.cs",
-              "RelativeDocumentMoniker": "Models\\Pessoa.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Pessoa.cs",
-              "RelativeToolTip": "Models\\Pessoa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Tabuada.cs",
+              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Tabuada.cs",
+              "RelativeDocumentMoniker": "Models\\Tabuada.cs",
+              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Tabuada.cs",
+              "RelativeToolTip": "Models\\Tabuada.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAIwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T13:43:44.85Z"
+              "WhenOpened": "2024-04-18T15:51:31.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calculadora.cs",
+              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Calculadora.cs",
+              "RelativeDocumentMoniker": "Models\\Calculadora.cs",
+              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Calculadora.cs",
+              "RelativeToolTip": "Models\\Calculadora.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAmwDMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:14:20.398Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,7 +58,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAnAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T13:39:18.834Z",
               "EditorCaption": ""

@@ -70,6 +70,8 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 | `*` | Multiplicação |
 | `/`  | Divisão |
 | `%` | Módulo (Resto da divisão)|
+| `++` | Incremento |
+| `--` | Decremento |
 |---|---|---|
 | `+=` | Mais igual |
 | `+=` | mais igual |
@@ -136,4 +138,21 @@ A estrutura switch case é recomendada para evitar estruturas if else aninhadas.
 ![Estrutura switch case](images/estrutura-switch-case.png)
 
 ---
+
+## Estruturas de Repetição
+
+### Estrutura de repetição FOR
+O laço de repetição for é composto por uma variável contadora, uma condicional e uma ação. Ao satisfazer a condição o laço é interrompido.
+
+![Estrutura for](images/estrutura-repeticao-for.png)
+
+### Estrutura de repetição While
+A estrutura while funciona de forma parecida com o laço for, mas com variáveis do ambiente.
+
+![Estrutura while](images/estrutura-repeticao-while.png)
+
+### Estrutura de repetição Do While
+A estrurura do while, funciona de forma parecida com a estrutura while, mas ela garante que pelo menos uma execução do código seja feita.
+
+![Estrutura do while](images/estrutura-repeticao-do-while.png)
 
