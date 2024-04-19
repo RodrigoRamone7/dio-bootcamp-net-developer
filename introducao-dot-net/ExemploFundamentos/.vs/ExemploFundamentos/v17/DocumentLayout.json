@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68DE5E68-5777-4BC0-9329-E7FBC40F63FA}|ExemploFundamentos\\ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\exemplofundamentos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68DE5E68-5777-4BC0-9329-E7FBC40F63FA}|ExemploFundamentos\\ExemploFundamentos.csproj|solutionrelative:exemplofundamentos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|solutionrelative:models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\models\\tabuada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCB67CE-94DA-4B1A-864A-CC882806D19C}|ExemploFundamentos.csproj|solutionrelative:models\\tabuada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68DE5E68-5777-4BC0-9329-E7FBC40F63FA}|ExemploFundamentos\\ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\exemplofundamentos\\exemplofundamentos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{68DE5E68-5777-4BC0-9329-E7FBC40F63FA}|ExemploFundamentos\\ExemploFundamentos.csproj|solutionrelative:exemplofundamentos\\exemplofundamentos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tabuada.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Tabuada.cs",
-              "RelativeDocumentMoniker": "Models\\Tabuada.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Tabuada.cs",
-              "RelativeToolTip": "Models\\Tabuada.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAIwA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T15:51:31.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Calculadora.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Calculadora.cs",
-              "RelativeDocumentMoniker": "Models\\Calculadora.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Models\\Calculadora.cs",
-              "RelativeToolTip": "Models\\Calculadora.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAmwDMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T11:14:20.398Z",
+              "Title": "ExemploFundamentos",
+              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
+              "RelativeDocumentMoniker": "ExemploFundamentos\\ExemploFundamentos.csproj",
+              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\ExemploFundamentos.csproj",
+              "RelativeToolTip": "ExemploFundamentos\\ExemploFundamentos.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-19T19:13:02.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAASAAAA",
+              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\Program.cs",
+              "RelativeDocumentMoniker": "ExemploFundamentos\\Program.cs",
+              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\Program.cs",
+              "RelativeToolTip": "ExemploFundamentos\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T13:39:18.834Z",
+              "WhenOpened": "2024-04-19T18:14:53.538Z",
               "EditorCaption": ""
             }
           ]

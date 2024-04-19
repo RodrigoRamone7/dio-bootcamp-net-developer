@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ExemploFundamentos</id>
+    <version>1.0.0</version>
+    <authors>ExemploFundamentos</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="8a3ea7049ff0fc75c1a718a0d4cb4c442ef4a142" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\bin\Debug\net8.0\ExemploFundamentos.runtimeconfig.json" target="lib\net8.0\ExemploFundamentos.runtimeconfig.json" />
+    <file src="G:\repositorios\dio-bootcamp\introducao-dot-net\ExemploFundamentos\bin\Debug\net8.0\ExemploFundamentos.dll" target="lib\net8.0\ExemploFundamentos.dll" />
+  </files>
+</package>
