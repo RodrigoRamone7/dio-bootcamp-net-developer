@@ -37,7 +37,10 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 `Models` representa a pasta ou pacote em que a classe está salva.
 
 ---
+
 ## Tipos em C#
+
+---
 
 ### Tabela de tipos
 
@@ -58,7 +61,10 @@ Os namespaces representam o caminho lógico da classe e deve ser declarado no c�
 | ulong | Valor inteiro 64 bit somente positivo | 0 até 18,446,744,073,709,551,615 | 0 |
 
 ---
+
 ## Operadores em C#
+
+---
 
 ### Tabela de operadores aritméticos
 
@@ -141,10 +147,18 @@ A estrutura switch case é recomendada para evitar estruturas if else aninhadas.
 
 ## Estruturas de Repetição
 
-### Estrutura de repetição FOR
+---
+
+### Estrutura de repetição For
 O laço de repetição for é composto por uma variável contadora, uma condicional e uma ação. Ao satisfazer a condição o laço é interrompido.
 
 ![Estrutura for](images/estrutura-repeticao-for.png)
+
+### Estrutura de repetição Foreach
+A estrutura de repetição foreach funciona de maneira semelhante com a estrutura for, porém, não temos acesso a um contador. Caso seja necessário o uso de um contador, é preciso declarar uma variável contadora.
+A estrutura percorre o array e para cada posição dele, a variável `valor` recebe o valor contido na posição.
+
+![Estrutura foreach](images/estrutura-repeticao-foreach.png)
 
 ### Estrutura de repetição While
 A estrutura while funciona de forma parecida com o laço for, mas com variáveis do ambiente.
@@ -156,3 +170,55 @@ A estrurura do while, funciona de forma parecida com a estrutura while, mas ela 
 
 ![Estrutura do while](images/estrutura-repeticao-do-while.png)
 
+---
+
+## Arrays e Listas em C#
+
+---
+
+### Arrays
+
+Estrutura de dados que armazena valores do mesmo tipo, com um tamanho fixo.
+
+#### Criando um Array
+Arrays podem ser instanciados assim como objetos. Também possuem métodos como `arrayInteiros.Length` que da o tamanho do array.
+##### Array de Inteiros com 3 posições
+![Array de Inteiro com 4 posições](images/criando-um-array.png)
+
+#### Redimensionando um Array
+Quando um Array é instanciado, não é mais possível alterar o seu tamanho.
+Somente com o auxilio da classe `Array` que é possivel redimensionar este array quando o programa já está rodando.
+
+![Resimensionando Array](images/redimensionando-array.png)
+Neste exemplo, o array tem a sua dimensão dobrada pelo método `Array.Resize()` que recebe dois parâmetros:
+1. O Array de referência `ref arrayInteiros`
+2. A operação que será feita no tamanho `arraiInteiros.Length * 2`
+
+#### Copiando um Array para outro
+O método `Array.Copy` possibilita a cópia de um array para outro.
+
+![Copiando um array para outro](images/copiando-array.png)
+Neste exemplo, é criando um novo array com o tamanho do antigo array dobrado.
+O método `Array.Copy` recebe os seguintes parametros:
+1. O array de origem `arrayInteiros`
+2. O array de destino `arrayInteirosDobrado`
+3. A quantidade de elementos do array de origem que serão copiados `arrayInteiros.length`
+*Este parametro está recebendo o tamanho do array antigo, ou seja, vai copiar o array inteiro*
+
+---
+
+### Listas
+As listas funcionam de forma parecida com os arrays, mas possuem métodos mais complexos e sua capacidade pode variar de tamanho.
+
+#### Criando uma lista e Adicionando elementos
+
+![Criando uma lista](images/criando-listas.png)
+No exemplo acima, criamos uma lista sem passar um parametro de tamanho.
+O método `.Add()` adiciona um novo elemento a lista e incrementa seu tamanho.
+Ao final, o loop for recebe o método `.Count` que funciona como o método `.Length` dos arrays.
+
+#### Removendo elementos
+
+![Removendo elementos](images/capacidade-da-lista.png)
+As listas trabalham internamente com um array, mas não precisamos nos preocupar com a capacidade deste array.
+As listas automaticamente alteram o sua capacidade.

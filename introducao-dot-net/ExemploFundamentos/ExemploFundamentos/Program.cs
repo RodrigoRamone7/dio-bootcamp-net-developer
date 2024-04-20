@@ -1,10 +1,81 @@
 ﻿using ExemploFundamentos.Common.Models;
 
-Pessoa pessoa1 = new Pessoa();
+
+//Removendo elemementos de listas
+List<string> listaString = new List<string>();
+
+listaString.Add("SP");
+listaString.Add("GO");
+listaString.Add("DF");
+listaString.Add("BA");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+
+listaString.Add("SC");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+listaString.Remove("BA");
+
+Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// Criando Listas
+/*List<string> listaString = new List<string>();
+
+listaString.Add("SP");
+listaString.Add("GO");
+listaString.Add("DF");
+listaString.Add("BA");
+
+for (int contador = 0; contador < listaString.Count; contador++)
+{
+    Console.WriteLine($"Posição Nº {contador} - {listaString[contador]}");
+}*/
+
+//Copiando arrays
+/*int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+
+int[] arrayInteirosDobrado = new int[arrayInteiros.Length * 2];
+Array.Copy(arrayInteiros, arrayInteirosDobrado, arrayInteiros.Length);
+
+for (int contador = 0; contador < arrayInteiros.Length; contador++)
+{
+    Console.WriteLine($"Valor da posição {contador} é {arrayInteiros[contador]}");
+}*/
+
+//Array.Resize(ref arrayInteiros, arrayInteiros.Length * 2);
+
+
+//Criando e percorrendo um array
+/*int[] arrayInteiros = new int[3];
+
+arrayInteiros[0] = 72;
+arrayInteiros[1] = 64;
+arrayInteiros[2] = 50;
+
+for (int contador = 0; contador < arrayInteiros.Length; contador++)
+{
+    Console.WriteLine($"Valor da posição {contador} é {arrayInteiros[contador]}");
+}
+
+int contadorForeach = 0;
+foreach(int valor in arrayInteiros)
+{
+    Console.WriteLine($"Valor da posição {contadorForeach} é {arrayInteiros[contadorForeach]}");
+    contadorForeach++;
+}*/
+
+//Exeplo de uso de classe de outro projeto de mesma solução
+/*Pessoa pessoa1 = new Pessoa();
 
 pessoa1.Nome = "Rodrigo";
 pessoa1.Idade = 29;
-pessoa1.Apresentar();
+pessoa1.Apresentar();*/
 
 
 //Exemplo de menu
