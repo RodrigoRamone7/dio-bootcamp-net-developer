@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\",
+  "WorkspaceRootPath": "D:\\repositories\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68DE5E68-5777-4BC0-9329-E7FBC40F63FA}|ExemploFundamentos\\ExemploFundamentos.csproj|g:\\repositorios\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\exemplofundamentos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68DE5E68-5777-4BC0-9329-E7FBC40F63FA}|ExemploFundamentos\\ExemploFundamentos.csproj|d:\\repositories\\dio-bootcamp\\introducao-dot-net\\exemplofundamentos\\exemplofundamentos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68DE5E68-5777-4BC0-9329-E7FBC40F63FA}|ExemploFundamentos\\ExemploFundamentos.csproj|solutionrelative:exemplofundamentos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\Program.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\Program.cs",
               "RelativeDocumentMoniker": "ExemploFundamentos\\Program.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\Program.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos\\Program.cs",
               "RelativeToolTip": "ExemploFundamentos\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T18:14:53.538Z",
               "EditorCaption": ""

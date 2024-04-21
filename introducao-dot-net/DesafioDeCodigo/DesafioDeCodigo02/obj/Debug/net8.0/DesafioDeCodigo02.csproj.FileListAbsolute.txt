@@ -1,0 +1,15 @@
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\bin\Debug\net8.0\DesafioDeCodigo02.exe
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\bin\Debug\net8.0\DesafioDeCodigo02.deps.json
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\bin\Debug\net8.0\DesafioDeCodigo02.runtimeconfig.json
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\bin\Debug\net8.0\DesafioDeCodigo02.dll
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\bin\Debug\net8.0\DesafioDeCodigo02.pdb
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.GeneratedMSBuildEditorConfig.editorconfig
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.AssemblyInfoInputs.cache
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.AssemblyInfo.cs
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.csproj.CoreCompileInputs.cache
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.sourcelink.json
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.dll
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\refint\DesafioDeCodigo02.dll
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.pdb
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\DesafioDeCodigo02.genruntimeconfig.cache
+D:\repositories\dio-bootcamp\introducao-dot-net\DesafioDeCodigo\DesafioDeCodigo02\obj\Debug\net8.0\ref\DesafioDeCodigo02.dll
