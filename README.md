@@ -19,7 +19,7 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
     - [x] Contribuindo em um Projeto Open Source no GitHub
     - [x] Aula Inaugural - Coding The Future Avanade
 
-- [ ] __*Fundamentos do .NET*__
+- [x] __*Fundamentos do .NET*__
 
     - [x] Introdução ao .NET
     - [x] Introdução as IDEs e Configuração de Ambiente .NET
@@ -29,9 +29,9 @@ Este repositório destina-se ao armazenamento dos arquivos de projetos do bootca
     - [x] Conhecendo as Estruturas de Repetição em C#
     - [x] Conhecendo a Organização de um Programa C#
     - [x] Array e Listas em C#
-    - [ ] Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional
-    - [ ] Desafios de Código Coding The Future Avanade l
-    - [ ] Construindo um Sistema para um Estacionamento com C#
+    - [x] Desafios de Código: Aperfeiçoe Sua Lógica e Pensamento Computacional
+    - [x] Desafios de Código Coding The Future Avanade l
+    - [x] Construindo um Sistema para um Estacionamento com C#
 
 - [ ] __*Manipulando Dados e Objetos com .NET*__
 

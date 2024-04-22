@@ -73,7 +73,7 @@ tabuada4.CalculaTabuadaNVezes(4, 1000);*/
 
 
 //Utilizando classe Calculadora
-/*Calculadora calc = new Calculadora();
+Calculadora calc = new Calculadora();
 
 calc.Somar(5, 5);
 calc.Subtrair(10, 50);
@@ -86,7 +86,7 @@ calc.Seno(30);
 calc.Coseno(30);
 calc.Tangente(30);
 Console.WriteLine("--------");
-calc.RaizQuadrada(9);*/
+calc.RaizQuadrada(9);
 
 
 

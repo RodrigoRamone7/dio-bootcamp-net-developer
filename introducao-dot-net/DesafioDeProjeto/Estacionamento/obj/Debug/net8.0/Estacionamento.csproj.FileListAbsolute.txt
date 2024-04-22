@@ -1,0 +1,15 @@
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\bin\Debug\net8.0\Estacionamento.exe
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\bin\Debug\net8.0\Estacionamento.deps.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\bin\Debug\net8.0\Estacionamento.runtimeconfig.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\bin\Debug\net8.0\Estacionamento.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\bin\Debug\net8.0\Estacionamento.pdb
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.GeneratedMSBuildEditorConfig.editorconfig
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.AssemblyInfoInputs.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.AssemblyInfo.cs
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.csproj.CoreCompileInputs.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.sourcelink.json
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\refint\Estacionamento.dll
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.pdb
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\Estacionamento.genruntimeconfig.cache
+G:\repositorios\dio-bootcamp\introducao-dot-net\DesafioDeProjeto\Estacionamento\obj\Debug\net8.0\ref\Estacionamento.dll

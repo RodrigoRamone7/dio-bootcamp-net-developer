@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.csproj",
+      "projectUniqueName": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos Backup\\ExemploFundamentos.csproj",
       "projectName": "ExemploFundamentos",
-      "projectPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.csproj",
+      "projectPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos Backup\\ExemploFundamentos.csproj",
       "packagesPath": "C:\\Users\\Impressão\\.nuget\\packages\\",
-      "outputPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\obj\\",
+      "outputPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos Backup\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Impressão\\AppData\\Roaming\\NuGet\\NuGet.Config",

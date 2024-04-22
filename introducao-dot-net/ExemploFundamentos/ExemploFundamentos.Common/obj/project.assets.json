@@ -8,33 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rodri\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Impressão\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\repositories\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+      "projectUniqueName": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
       "projectName": "ExemploFundamentos.Common",
-      "projectPath": "D:\\repositories\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
-      "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "D:\\repositories\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
+      "projectPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.Common\\ExemploFundamentos.Common.csproj",
+      "packagesPath": "C:\\Users\\Impressão\\.nuget\\packages\\",
+      "outputPath": "G:\\repositorios\\dio-bootcamp\\introducao-dot-net\\ExemploFundamentos\\ExemploFundamentos.Common\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Impressão\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
       },
       "frameworks": {
         "net8.0": {
