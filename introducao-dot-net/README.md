@@ -1,4 +1,39 @@
-# .NET
+# Fundamentos do C# com .NET
+---
+* [Descrição](#descri-o)
+* [Versões](#vers-es)
+* [Classes](#classes)
+    - [Exemplo de classe em .NET](#exemplo-de-classe-em-net)
+    - [namespaces](#namespaces)
+* [Tipos em C#](#tipos-em-c)
+  + [Tabela de tipos](#tabela-de-tipos)
+* [Operadores em C#](#operadores-em-c)
+  + [Tabela de operadores aritméticos](#tabela-de-operadores-aritm-ticos)
+  + [Convertendo tipos](#convertendo-tipos)
+    - [Convert](#convert)
+    - [Parse](#parse)
+    - [Casting implicito](#casting-implicito)
+    - [Convertendo de forma segura](#convertendo-de-forma-segura)
+  + [Tabela de operadores Condicionais](#tabela-de-operadores-condicionais)
+  + [Tabela de operadores lógicos](#tabela-de-operadores-l-gicos)
+* [Estruturas Condicionais](#estruturas-condicionais)
+  + [Estrutura if else](#estrutura-if-else)
+  + [Estrutura switch case](#estrutura-switch-case)
+* [Estruturas de Repetição](#estruturas-de-repeti-o)
+  + [Estrutura de repetição For](#estrutura-de-repeti-o-for)
+  + [Estrutura de repetição Foreach](#estrutura-de-repeti-o-foreach)
+  + [Estrutura de repetição While](#estrutura-de-repeti-o-while)
+  + [Estrutura de repetição Do While](#estrutura-de-repeti-o-do-while)
+* [Arrays e Listas em C#](#arrays-e-listas-em-c)
+  + [Arrays](#arrays)
+    - [Criando um Array](#criando-um-array)
+      * [Array de Inteiros com 3 posições](#array-de-inteiros-com-3-posi-es)
+    - [Redimensionando um Array](#redimensionando-um-array)
+    - [Copiando um Array para outro](#copiando-um-array-para-outro)
+  + [Listas](#listas)
+    - [Criando uma lista e Adicionando elementos](#criando-uma-lista-e-adicionando-elementos)
+    - [Removendo elementos](#removendo-elementos)
+
 ---
 ## Descrição
 
