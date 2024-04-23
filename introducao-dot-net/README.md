@@ -65,7 +65,7 @@ As classes são a estrutura mais básica de um projeto orientado a objeto. Ela p
 #### namespaces
 Os namespaces representam o caminho lógico da classe e deve ser declarado no código do programa para que as classes desenvolvidas possam ser utilizadas.
 
-![Usando namespaces](images\namespaces.png)
+![Usando namespaces](images/namespaces.png)
 
 `using ExemploFundamentos.Models` vai definir o caminho lógico de onde as classes estão salvas para assim poderem ser usadas no software.
 
