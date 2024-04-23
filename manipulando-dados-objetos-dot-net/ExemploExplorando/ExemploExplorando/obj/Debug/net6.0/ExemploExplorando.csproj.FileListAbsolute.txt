@@ -1,0 +1,15 @@
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\bin\Debug\net6.0\ExemploExplorando.exe
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\bin\Debug\net6.0\ExemploExplorando.deps.json
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\bin\Debug\net6.0\ExemploExplorando.runtimeconfig.json
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\bin\Debug\net6.0\ExemploExplorando.dll
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\bin\Debug\net6.0\ExemploExplorando.pdb
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.GeneratedMSBuildEditorConfig.editorconfig
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.AssemblyInfoInputs.cache
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.AssemblyInfo.cs
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.csproj.CoreCompileInputs.cache
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.sourcelink.json
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.dll
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\refint\ExemploExplorando.dll
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.pdb
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.genruntimeconfig.cache
+G:\repositorios\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ref\ExemploExplorando.dll

@@ -1,15 +1,23 @@
 # DIO .NET developer
 
 ## Descrição
-Este repositório destina-se ao armazenamento dos arquivos de projetos do bootcamp DIO .NET developer.
+Este repositório destina-se ao armazenamento e organização dos arquivos de estudos do bootcamp DIO .NET developer.
 
 ## Links
-[Meu perfil na plataforma](https://www.dio.me/users/rodrigo_wow7)
+__1. [Meu perfil na plataforma](https://www.dio.me/users/rodrigo_wow7)__
+
+__2. [Anotações Git e GitHub](git-github/README.md)__
+
+__3. [Anotações Fundamentos](introducao-dot-net/README.md)__
+
+__4. [Anotações Manipulando Dados e Objetos](manipulando-dados-objetos-dot-net/README.md)__
 
 ## Projetos
-[Constribuindo em um Projeto Open Source no Github](https://github.com/RodrigoRamone7/dio-lab-open-source)
+__1. [Constribuindo em um Projeto Open Source no Github](https://github.com/RodrigoRamone7/dio-lab-open-source)__
 
-## todo
+__2. [Desafio de Fundamentos](https://github.com/RodrigoRamone7/trilha-net-fundamentos-desafio)__
+
+## TODO
 
 - [x] __*Principios de Desenvolvimento De Aplicações*__
 
