@@ -8,13 +8,20 @@ namespace ExemploExplorando.Models
 {
     internal class Pessoa
     {
+        public Pessoa() 
+        {
+        
+        }
+        public Pessoa(string nome, string sobrenome) 
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
         private string _nome;
         public string Nome 
         {
-            get
-            {
-                return _nome.ToUpper();
-            }
+            get => _nome.ToUpper();
+            
 
             set
             {
@@ -28,12 +35,32 @@ namespace ExemploExplorando.Models
 
         }
 
+        public string Sobrenome { get; set; }
 
-        public int Idade { get; set; }
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+
+        private int _idade;
+        public int Idade
+        {
+            get => _idade;
+
+            set 
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Idade não pode ser menor que 0.");
+                }
+                else
+                {
+                    _idade = value;
+                }
+            }
+        }
+
 
         public void Apresentar()
         {
-            Console.WriteLine($"Nome: {Nome}\nIdade: {Idade}");
+            Console.WriteLine($"Nome: {NomeCompleto} \nIdade: {Idade}");
         }
     }
 }
