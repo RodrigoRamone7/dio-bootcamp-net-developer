@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|g:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|g:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\models\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|g:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|g:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Curso.cs",
               "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Curso.cs",
               "RelativeDocumentMoniker": "ExemploExplorando\\Models\\Curso.cs",
               "ToolTip": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Curso.cs",
               "RelativeToolTip": "ExemploExplorando\\Models\\Curso.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAANAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwCEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T14:30:33.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Pessoa.cs",
               "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Pessoa.cs",
               "RelativeDocumentMoniker": "ExemploExplorando\\Models\\Pessoa.cs",
               "ToolTip": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Pessoa.cs",
               "RelativeToolTip": "ExemploExplorando\\Models\\Pessoa.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T12:37:52.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Program.cs",
               "RelativeDocumentMoniker": "ExemploExplorando\\Program.cs",
               "ToolTip": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Program.cs",
               "RelativeToolTip": "ExemploExplorando\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T12:37:14.234Z",
               "EditorCaption": ""

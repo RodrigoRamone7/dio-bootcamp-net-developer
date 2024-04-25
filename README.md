@@ -44,7 +44,7 @@ __2. [Desafio de Fundamentos](https://github.com/RodrigoRamone7/trilha-net-funda
 - [ ] __*Manipulando Dados e Objetos com .NET*__
 
     - [x] Propriedades, Métodos e Construtores com C#
-    - [ ] Manipulando Valores com C#
+    - [x] Manipulando Valores com C#
     - [ ] Exceções e Coleções com C#
     - [ ] Tuplas, Operador Ternário e Desconstrução de um Objeto com C#
     - [ ] Nuget, Serializar e Atributos no C#

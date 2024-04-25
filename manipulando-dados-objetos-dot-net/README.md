@@ -55,6 +55,7 @@ No exemplo acima, uma body expression foi utilizada para apenas atribuir o valor
 ---
 
 ## Métodos
+
 Os métodos são ações que a classe pode executar. Nada mais são que outra forma de escrever uma função. Métodos auxiliam principalmente em reduzir drasticamente a repetição de um código.
 Se seu programa tem muita reptição de código, considere criar um método para ele.
 
@@ -95,4 +96,97 @@ Os argumentos de um construtor são declarados com seu tipo e nome de utilizaç�
 Caso os parametros não sejam declarados no momento de sua instanciação, ocorrerá um erro. Para evitar isto, um construtor de mesmo nome e sem argumentos deve ser criado.
 Portanto a classe pode ser declarada com argumentos ou não neste caso.
 
+---
 
+## Manipulando valores
+
+### Concatenação
+Quando se trata de strings, o operador aritmético `+` não faz mais uma operação de soma, como é esperado numa operação entre variáveis do tipo `int` por exemplo.
+
+![Concatenação de strings](images/concatecacao-strings.png)
+No exemplo acima, o operador vai apenas concatenar as strings e variáveis numa única variável. Dando como resultado um único texto.
+
+### Interpolação
+A interpolação facilita o entendimento do código por meio da concatenação dentro da string. Toda interpolação deve começar com o símbolo `$`.
+
+![Interpolação de string](images/interpolacao-string.png)
+Note que as variáveis agora estão dentro da string separadas por `{}` do restante da string.
+
+### Formatando valores monetários
+Podemos utilizar uma formatação para valores monetários sem que seja necessário escrever `R$` dentro da string por meio da interpolação. Para que seja feita a formatação monetária, é necessário utilizar `:C` após a variável dentro das `{}`.
+
+![Formatação monetária](images/formatacao-monetaria.png)
+O `:C` representa a palavra currecy que significa moeda. Esta formatação vai automaticamente coletar a informação de região do sistema, portanto vai formatar de acordo com a moeda da região do sistema.
+
+#### Formatação monetária de outra região
+Caso seja necessário outra formatação monetária, é possível utilizar a biblioteca `System.Globalization`, com ela podemos utilizar a classe `CultureInfo.DefaultThreadCurrentCulture` para alterar a cultura do sistema para que receba valores personalizados.
+
+![Formatação monetária de outra região](images/formatacao-monetaria-outra-regiao.png)
+No exemplo acima a classe recebe um `new CultureInfo("en-US")` que formata o valor de acordo com a moeda dos Estados Unidos.
+
+__*Este método deve ser utilizado com cautela, pois o mesmo vai setar o valor em toda a execução do programa.*__
+
+![Formatação monetária em linha](images/formatacao-monetaria-tostring.png)
+Caso seja necessário a formatação em apenas uma parte do sistema, é possível utilizar a formatação no método `.ToString`.
+
+### Formatação personalizada
+É possível determinar uma formatação personalizada, caso precise que o número seja formatado com 2 casas decimais ou porcentagem por exemplo.
+
+![Formatação personalizada](images/formatacao-personalizada.png)
+Neste exemplo, a saída será `12-34-56`.
+
+#### Formatando casas decimais
+
+![Formatando casas decimais](images/formatacao-casas-decimais.png)
+Neste exemplo, terá uma formatação de número com apenas uma casa decimal.
+
+#### Formatando porcentagem
+
+![Formatando porcentagem](images/formatacao-porcentagem.png)
+Neste exemplo, a saída formatada será `34,21%`
+
+### Formatação do tipo DateTime
+A classe `DateTime` é responsável por capturar a data e hora atual do sistema. Ela é muito útil para trabalhos que precisam de informação de data e hora, como em um banco de dados.
+
+![DateTime](images/datetime-tipo.png)
+No exemplo acima, será capturada a data e hora completa no momento da execução do programa.
+
+#### Formatando data e hora
+
+![Formatando data e hora](images/datetime-formatacao.png)
+No exemplo acima, será feita a formatação padrão brasileira dispensando os segundos. Haverá diferença entre letras maiúsculas e minúsculas, como no caso de `MM` e `mm`, onde um representa mês e o outro minutos.
+
+#### Somente data ou hora
+
+![Somente data ou hora](images/datetime-data-ou-hora.png)
+Podemos também obter somente a data ou somente a hora pelos métodos `.ToShortDateString()` e `.ToShortTimeString()`.
+
+#### Conversões no DateTime
+
+Nem sempre temos a nossa disposição a data e hora do sistema. Para isso podemos utilizar a conversão de string para o tipo DateTime.
+
+##### Parse
+
+![Parse DateTime](images/datetime-parse.png)
+Neste caso estamos passando uma string que será convertida em DateTime.
+Caso a data não seja válida, a classe vai apresentar um erro e o programa será encerrado.
+
+##### TryParse
+
+Podemos utilizar o método `.TryParseExact` para controlar melhor a formatação de datas para que não ocorra um erro caso seja passada uma data inválida.
+
+![DateTime TryParse](images/datetime-tryparse.png)
+Neste caso, estamos passando uma data inválida com o mês 13.
+O método `.TryParse` recebe 5 parâmetros:
+1. `dataString` - A variável que será formatada
+2. `yyyy-MM-dd HH:mm` - Como será a formatação
+3. `CultureInfo.InvariantCulture` - A cultura de sistema
+4. `DateTimeStyles.None` - O estilo do DateTime
+5. `out DateTime data` - A variável de saída
+
+Neste caso a saída será `01/01/0001 00:00:00` pois passamos um mês inválido, mas não ocorrerá um erro.
+
+##### Validando o TryParse
+O método `.TryParseExact` retorna um valor booleano, com isso podemos validar se o valor foi convertido ou não.
+
+![Validando TryParse](images/datetime-validando-tryparse.png)
