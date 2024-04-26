@@ -99,6 +99,7 @@ Portanto a classe pode ser declarada com argumentos ou não neste caso.
 ---
 
 ## Manipulando valores
+A manipulação de valores acontece em todo programa de computador e devem ser levado em consideração alguns casos para que não ocorram erros ou bugs no código.
 
 ### Concatenação
 Quando se trata de strings, o operador aritmético `+` não faz mais uma operação de soma, como é esperado numa operação entre variáveis do tipo `int` por exemplo.
@@ -177,7 +178,7 @@ Podemos utilizar o método `.TryParseExact` para controlar melhor a formatação
 
 ![DateTime TryParse](images/datetime-tryparse.png)
 Neste caso, estamos passando uma data inválida com o mês 13.
-O método `.TryParse` recebe 5 parâmetros:
+O método `.TryParseExact` recebe 5 parâmetros:
 1. `dataString` - A variável que será formatada
 2. `yyyy-MM-dd HH:mm` - Como será a formatação
 3. `CultureInfo.InvariantCulture` - A cultura de sistema
@@ -190,3 +191,9 @@ Neste caso a saída será `01/01/0001 00:00:00` pois passamos um mês inválido,
 O método `.TryParseExact` retorna um valor booleano, com isso podemos validar se o valor foi convertido ou não.
 
 ![Validando TryParse](images/datetime-validando-tryparse.png)
+
+---
+
+## Exceções e Coleções
+
+Os recursos de manipulação de exceção ajudam você a lidar com quaisquer situações excepcionais ou inesperadas que ocorram quando um programa for executado.

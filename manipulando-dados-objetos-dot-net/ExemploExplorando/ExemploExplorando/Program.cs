@@ -1,7 +1,16 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-string dataString = "2022-04-17 18:00";
+string[] linhas = File.ReadAllLines("../../../arquivos/arquivoLeitura.txt");
+
+foreach (string linha in linhas)
+{
+    Console.WriteLine(linha);
+}
+
+
+
+/*string dataString = "2022-04-17 18:00";
 
 bool sucesso = DateTime.TryParseExact(
     dataString,
@@ -17,10 +26,7 @@ if (sucesso)
 else
 {
     Console.WriteLine($"{dataString} não é uma data válida.");
-}
-
-
-
+}*/
 
 
 /*CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");

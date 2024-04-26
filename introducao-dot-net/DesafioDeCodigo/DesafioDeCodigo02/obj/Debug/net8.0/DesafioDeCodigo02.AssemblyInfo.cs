@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesafioDeCodigo02")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40c7c2da8161de2003ec2cdbbf686b7e15694541")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ee5cd3ea05c3800139f7521c8511f41ab43d8bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesafioDeCodigo02")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesafioDeCodigo02")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
