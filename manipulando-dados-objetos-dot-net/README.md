@@ -194,7 +194,7 @@ O método `.TryParseExact` retorna um valor booleano, com isso podemos validar s
 
 ---
 
-## Exceções e Coleções
+## Exceções
 
 Os recursos de manipulação de exceção ajudam você a lidar com quaisquer situações excepcionais ou inesperadas que ocorram quando um programa for executado.
 
@@ -212,3 +212,85 @@ Nem sempre temos o caminho do arquivo bem escrito como no tópico acima, quando 
 ![Tratando exceção](images/excecao-tratamento.png)
 Para que não ocorra uma exceção e o programa continue sua execução, podemos utilizar o bloco `try` e caso o código dentro do bloco não seja executado corretamente, o bloco `catch` vai pegar uma exceção e exibir a mensagem definida pelo desenvolvedor.
 A classe `Exception` captura as excessões ocorridas e as armazena na variável `ex`. A expressão `ex.Message` exibe uma mensagem genérica desta exceção que ocorreu e exibe no terminal.
+
+### Exceção genérica e específica
+
+#### Genérica
+
+O método `.ReadAllLines` retorna várias exceções genéricas, onde erros comumente encontrados já estão prontos e retornam exceções como `Could not find file` ou `Could not find a part of the path` por exemplo.
+Um bloco de exceção `catch` genérico pode ser excrito para capturar qualquer mensagem de erro que o desenvolvedor não esteja esperando e não interromper a execução do programa.
+
+![Exceções ReadAllLines](images/excecao-readalllines-capturadas.png)
+
+#### Específica
+
+As exceções específicas ocorrem quando já conhecemos o erro e podemos atribuir mensagens específicas para o erro. Os blocos `catch` são utilizados para escrever o código dos erros específicos que o desenvolvedor quer tratar e possibilitar que o programa continue executando.
+É possível escrever quantos blocos `catch` forem necessários.
+
+![Exceção específica](images/excecao-especifica.png)
+A exceção específica é definida pelo tipo de exceção que será capturada `FileNotFoundException` e a variável onde a mensagem de erro será armazenada `ex`.
+
+#### Bloco finally
+
+Muitas vezes se faz necessária uma ação independetende de ter ocorrido um erro ou não. O bloco `finally` é utilizado para que executemos um bloco de código mesmo que não ocorra nenhuma excessão.
+
+![Bloco finally](images/excecao-finally.png)
+O bloco finally se faz necessário para fechar uma conexão com o banco de dados por exemplo.
+
+### Exceção Throw
+
+A exceção Throw é utilizada para capturar e jogar uma exceção para cima, ou seja, vai ocorrer uma exceção inesperada e sejá jogada para o último bloco de código executado. Caso o bloco acima tenha um tratamento de exceção catch, o throw utilizará este tratamento, auxiliando no reaproveitamento de código.
+
+![throw](images/excecao-throw.png)
+No exemplo acima, o `Método4()` é o último a ser executado, ocorrendo uma exceção, esta será jogada para o `Metodo3()`, que caso tiver um `catch`, este erro será tratado de acordo com o bloco. Neste caso vai para o `metodo2()` e somente no `metodo1()` esta exceção é tratada.
+
+---
+
+## Coleções
+
+As coleções de elementos com diferentes comportamentos dependendo de seu tipo.
+
+### Filas
+
+As filas são arrays do tipo `Queue` que obedece a ordem FIFO (First in First out), que seu comportamento consiste no primeiro elemento a entrar é o primeiro a sair. Funcionando como uma fila de banco, por exemplo. O primeiro dado a ser recebido pela fila será o primeiro a ser processado e assim sucessivamente.
+
+![Fila](images/colecoes-fila.png)
+No exemplo acima foram adicionado 5 elementos inteiros a uma fila com o método `.Enqueue()` criado pela classe `Queue`.
+Na linha 19 o primeiro elemento que entrou é removido, neste caso o elemento 2 adicionado na linha 7. Note que o método `.Dequeue()` não pussui parâmetro. Isso ocorre pelo comportamento da fila.
+
+### Pilhas
+
+As pilhas, ao contrário das filas, são arrays do tipo `Stack` que obedece a ordem LIFO (Last in First out), que seu comportamento consiste no primeiro a entrar é o último a sair. Funcionando como uma pilha de livros, por exemplo. Sempre será processado o dado de cima da pilha.
+
+![Pilha](images/colecoes-pilha.png)
+No exemplo acima também são adicionados 5 elementos com o método `.Push()`. Na linha 17 o último elemento a ser adicionado é removido com o método `.Pop()`, neste caso o último elemento a ser adicionado é o número 10.
+
+### Dicionários
+
+Os dicionários são uma coleção de pares chave-valor para armazenar valores únicos sem uma ordem específica.
+A classe `Dictionary` cria um conjunto de elementos de qualquer tipo que não seguem uma ordem específica e cada elemento dentro deste array é único.
+
+![Dicinário](images/colecoes-discionario.png)
+No exemplo acima temos 3 pares de chave valor com o método `.Add()` sendo eles 3 estados do Brasil e suas siglas como chave.
+Não é possível adicionar uma chave que já exista dentro do dicionário.
+
+#### Removendo elementos
+
+Podemos remover elementos pela sua chave utilizando o método `.Remove()`.
+
+![Removendo elementos](images/colecoes-discionario-removendo.png)
+No exemplo acima removemos o elemento `"BA"` do dicionário
+
+#### Alterando elementos
+
+Para alterar um elemento existente, precisados da chave do elemento e utilizaremos ela como um índice de array.
+
+![Alterando elementos](images/colecoes-discionario-alterando.png)
+No exemplo acima alteramos o valor da chave `"DF"`.
+
+#### Verificando chave existente
+
+Podemos verificar se a chave que queremos adicionar já existe no dicionário.
+
+![Verificando chave existente](images/colecoes-discionario-vevrificando-existente.png)
+No exemplo acima recebemos uma variável string `chave`, que passa por uma verificação no método `.ContainsKey()` do dicionário. Caso o valor já exista no dicionário, será exibida a mensagem da linha 39, caso não, o valor `"Bahia"` será adicionado com a chave determinada anteriormente.
