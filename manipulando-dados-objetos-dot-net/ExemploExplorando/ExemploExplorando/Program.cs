@@ -1,11 +1,17 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-string[] linhas = File.ReadAllLines("../../../arquivos/arquivoLeitura.txt");
-
-foreach (string linha in linhas)
+try
 {
-    Console.WriteLine(linha);
+    string[] linhas = File.ReadAllLines("../../../arquivos/arquivo_Leitura.txt");
+
+    foreach (string linha in linhas)
+    {
+        Console.WriteLine(linha);
+    }
+} catch(Exception ex)
+{
+    Console.WriteLine($"Ocorreu uma exceção genética. {ex.Message}");
 }
 
 

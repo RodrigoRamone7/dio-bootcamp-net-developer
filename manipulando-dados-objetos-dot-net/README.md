@@ -197,3 +197,18 @@ O método `.TryParseExact` retorna um valor booleano, com isso podemos validar s
 ## Exceções e Coleções
 
 Os recursos de manipulação de exceção ajudam você a lidar com quaisquer situações excepcionais ou inesperadas que ocorram quando um programa for executado.
+
+### Realizando leitura de um arquivo
+
+A classe `File` permite a leitura de arquivos através do endereço deles. Pode ser inserido como argumento o caminho completo do arquivo ou somente o arquivo a partir do programa.
+
+![Leitura de arquivo](images/leitura-arquivo.png)
+No exemplo acima é necessário utilizar o `../../../` pois o os arquivos de solução no visual studio são carregados a partir da pasta `bin/Debug/net6.0/`. Portanto é necessário que voltemos o caminho para a pasta do projeto.
+
+### Disparando e tratando uma exceção
+
+Nem sempre temos o caminho do arquivo bem escrito como no tópico acima, quando acontece, o programa dispara uma excessão e se encerra. Alguns códigos de erro serão impressos no terminal dando uma pista para que o desenvolvedor investigue onde está ocorrendo o erro.
+
+![Tratando exceção](images/excecao-tratamento.png)
+Para que não ocorra uma exceção e o programa continue sua execução, podemos utilizar o bloco `try` e caso o código dentro do bloco não seja executado corretamente, o bloco `catch` vai pegar uma exceção e exibir a mensagem definida pelo desenvolvedor.
+A classe `Exception` captura as excessões ocorridas e as armazena na variável `ex`. A expressão `ex.Message` exibe uma mensagem genérica desta exceção que ocorreu e exibe no terminal.
