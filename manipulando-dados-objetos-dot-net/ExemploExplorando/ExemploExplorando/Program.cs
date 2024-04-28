@@ -1,7 +1,64 @@
 ﻿using ExemploExplorando.Models;
 using System.Globalization;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
+int numero = 20;
+bool ePar = false;
+
+ePar = numero % 2 == 0;
+
+Console.WriteLine($"O número {numero} é " + (ePar ? "par" : "ímpar"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Pessoa pessoa1 = new Pessoa("Rodrigo", "Ramone");
+
+(string nome, string sobrenome) = pessoa1;
+
+Console.WriteLine($"{nome} {sobrenome}");*/
+
+/*LeituraArquivo arquivo = new LeituraArquivo();
+
+var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("../../../arquivos/arquivoLeitura.txt");
+
+if (sucesso)
+{
+    //Console.WriteLine($"Quantidade de linhas do arquivo: {quantidadeLinhas}");
+    foreach(string linha in linhasArquivo)
+    {
+        Console.WriteLine(linha);
+    }
+}
+else
+{
+    Console.WriteLine("Não foi possível ler o arquivo");
+}*/
+
+/*//Tupla
+(int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Rodrigo", "Ramone", 1.7M);
+
+ValueTuple< int, string, string, decimal> outroExemploTupla = (1, "Rodrigo", "Ramone", 1.7M);
+
+var outroExemploTuplaCreate = Tuple.Create(1, "Rodrigo", "Ramone", 1.7M);
+
+Console.WriteLine($"Id: {outroExemploTupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Nome}");
+Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
+Console.WriteLine($"Altura: {tupla.Altura}");
+*/
+
+/*Dictionary<string, string> estados = new Dictionary<string, string>();
 
 estados.Add("GO", "Goiás");
 estados.Add("DF", "Distrito Federal");
@@ -46,7 +103,7 @@ else
 foreach (var estado in estados)
 {
     Console.WriteLine($"Chave: {estado.Key}, Valor: {estado.Value}");
-}
+}*/
 
 
 

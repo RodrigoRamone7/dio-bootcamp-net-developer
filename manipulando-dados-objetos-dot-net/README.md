@@ -294,3 +294,48 @@ Podemos verificar se a chave que queremos adicionar já existe no dicionário.
 
 ![Verificando chave existente](images/colecoes-discionario-vevrificando-existente.png)
 No exemplo acima recebemos uma variável string `chave`, que passa por uma verificação no método `.ContainsKey()` do dicionário. Caso o valor já exista no dicionário, será exibida a mensagem da linha 39, caso não, o valor `"Bahia"` será adicionado com a chave determinada anteriormente.
+
+---
+
+## Tuplas, Operador ternário e Desconstrução de Objeto
+
+Tuplas fornece sintaxe concisa para agrupar vários elementos de dados em uma estrutura de dados leve. Uma tupla funciona de forma parecida com as coleções, mas porem carregar em si diferentes tipos de dados
+
+### Sintaxe de uma tupla
+
+![Sintaxe de uma tupla](images/tupla-sintaxe.png)
+Como podemos ver no exemplo acima, a tupla primeiro recebe os parâmetros de tipo, é declarada como qualquer outra variável e recebe os valores na mesma sequência de tipos.
+
+### Tuplas em métodos
+
+Suponhamos que temos um método que precisa retornar mais de um valor. Utilizando a tupla isso é possível.
+
+![Tupla em método](images/tupla-metodo.png)
+No exemplo acima temos um método `LerArquivo()` que retorna 3 valores `bool, string, int`. O retorno em tupla sempre deve ser na mesma sequencia em que o retorno de método foi declarado.
+
+![Tupla na prática](images/tupla-na-pratica.png)
+Na prática o retorno em tupla precisa de 3 variáveis para recebe-los, podemos utilizar a palavra reservada `var` para que o próprio C# identifique que tipo de variável está sendo retornada e assim declarar seus nomes.
+
+### Descartes
+
+Podemos descartar informações desnecessárias caso um método com retorno em tupla seja chamado.
+
+![Descarte](images/tupla-descartes.png)
+Caso um alguma informação do retorno em tupla não seja necessária no programa, podemos utilizar o `_` neste retorno para que este seja descartado.
+
+### Desconstrutor
+
+O desconstrutor funciona de forma inversa ao construtor de uma classe.
+
+![Descontrutor](images/tupla-desconstrutor.png)
+Podemos observar que diferente do construtor `Pessoa()`, o `Deconstruct()` recebe as propriedades de Nome e Sobrenome da classe `Pessoa` e as armazena em variáveis de saída. Fazendo a operação inversa ao construtor da classe.
+
+![Desconstrutor na prática](images/tupla-desconstrutor-pratica.png)
+Ná prática, o descontrutor declarado dentro da classe possibilita o retorno de uma tupla, armazenando duas variáveis do tipo string `nome` e `sobrenome` separadamente do objeto instanciado.
+
+### Operador ternário
+
+Para casos mais simples de validações If-Else, podemos utilizar o operador ternário para melhorar a legibilidade do código.
+
+![Operador ternário](images/tupla-operador-ternario.png)
+No exemplo acima, declaramos uma variável booleana `ePar` que receberá um teste lógico `numero % 2 == 0` para verificar se o número é par ou ímpar. O operador ternário fará a validação se essa condição é `true` ou `false` por meio da expressão `ePar ? "par" : "ímpar"`, dispensando o uso de blocos If-Else e melhorando a legibilidade do código.
