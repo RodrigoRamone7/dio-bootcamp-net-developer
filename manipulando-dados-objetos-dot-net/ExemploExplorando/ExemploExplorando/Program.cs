@@ -1,26 +1,31 @@
 ﻿using ExemploExplorando.Models;
+using Newtonsoft.Json;
 using System.Globalization;
+using Newtonsoft.Json;
 
-int numero = 20;
+Venda v1 = new Venda(1, "Material de escritório", 25.00M);
+
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+
+Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+/*int numero = 20;
 bool ePar = false;
 
 ePar = numero % 2 == 0;
 
-Console.WriteLine($"O número {numero} é " + (ePar ? "par" : "ímpar"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Console.WriteLine($"O número {numero} é " + (ePar ? "par" : "ímpar"));*/
 
 /*Pessoa pessoa1 = new Pessoa("Rodrigo", "Ramone");
 

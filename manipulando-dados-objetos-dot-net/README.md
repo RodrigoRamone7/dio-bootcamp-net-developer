@@ -339,3 +339,72 @@ Para casos mais simples de validações If-Else, podemos utilizar o operador ter
 
 ![Operador ternário](images/tupla-operador-ternario.png)
 No exemplo acima, declaramos uma variável booleana `ePar` que receberá um teste lógico `numero % 2 == 0` para verificar se o número é par ou ímpar. O operador ternário fará a validação se essa condição é `true` ou `false` por meio da expressão `ePar ? "par" : "ímpar"`, dispensando o uso de blocos If-Else e melhorando a legibilidade do código.
+
+---
+
+## Nuget, Serializar e Atributos
+
+__O que é um pacote?__
+Um pacote é um conjunto de códigos úteis, que possibilita o compartilhamento e reuso de código.
+
+### Nuget
+Nuget é um gerenciador de pacotes para .NET que auxiliam o desenvolvedor com pacotes de códigos prontos para fazer determinadas funções que algum outro desenvolvedor já escreveu.
+[Pacotes Nuget](https://www.nuget.org/)
+
+#### Instalando pacotes
+
+##### Visual Studio
+No Visual Studio podemos instalar por meio do gerenciador de pacotes da própria IDE:
+
+###### Gerenciar Pacotes NuGet
+
+1. Clique com o botão direito no .cjproj
+2. Clique em Gerenciar Pacotes do NuGet
+
+![Gerenciar Pacotes do NuGet](images/nuget-gerenciar-pacotes.png)
+
+1. Clique na aba Procurar
+2. Selecione o pacote que deseja baixar
+
+![Aba procurar](images/nuget-aba-procurar.png)
+
+1. Clique em instalar
+
+![Instalar](images/nuget-instalar-pacote.png)
+
+###### Console Gerenciador de Pacotes
+
+1. Clique na Aba Exibir
+2. Vá até Outras Janelas
+3. Clique em Console do Gerenciador de Pacotes
+
+![Console Gerenciador de Pacotes](images/nuget-console-gerenciador.png)
+
+1. Econtre o link do pacote que deseja baixar
+2. Vá até a aba Package Manager
+3. Copie o comando para o Package Manager
+4. Cole no Console Gerenciador de Pacotes
+5. Pressione ENTER
+
+![Cole no Console Gerenciador de Pacotes](images/nuget-console-gerenciador-1.png)
+
+#### Serialização de dados
+
+A serialização consiste em transformar objetos de um programa em bytes para que possam persistir em algum tipo de arquivo, espaço na memória ou banco de dados.
+
+##### JSON
+JavaScript Notation Object é um formato de texto que segue a sintaxe Javascript, muito usado para transmitir dados entre aplicações.
+
+    {
+        "id": 1,
+        "Produto": "P1",
+        "Preco": 10.50
+    }
+
+##### Pacote Newtonsoft
+
+O pacote Newtonsoft é um dos mais utilizados no mundo para transformar objetos em formato `.json`.
+
+![Utilizando pacote Newtonsoft](images/nuget-serializacao-newtonsoft.png)
+Digitando `using Newtonsoft.Json` podemos então utilizar a classe `JsonConvert` que possui o método `.SerializeObject` que serializa um objeto intanciado dentro do programa.
+O método recebe o primeiro parâmetro que será o objeto a ser serializado e possui sobrecarga para formatação `Formatting.Idented`.

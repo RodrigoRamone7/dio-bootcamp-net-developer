@@ -28,3 +28,6 @@ D:\repositories\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando
 D:\repositories\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\bin\Debug\net6.0\ExemploExplorando.pdb
 D:\repositories\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.genruntimeconfig.cache
 D:\repositories\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ref\ExemploExplorando.dll
+D:\repositories\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\repositories\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploExplorando.csproj.AssemblyReference.cache
+D:\repositories\dio-bootcamp\manipulando-dados-objetos-dot-net\ExemploExplorando\ExemploExplorando\obj\Debug\net6.0\ExemploE.B7F01285.Up2Date

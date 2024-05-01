@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|d:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|d:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\models\\leituraarquivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\models\\leituraarquivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|d:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\models\\exemploexcecao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\models\\exemploexcecao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|d:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\exemploexplorando\\exemploexplorando\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC6D7E76-3DF2-4AFB-BCA2-3798F2A34D74}|ExemploExplorando\\ExemploExplorando.csproj|solutionrelative:exemploexplorando\\models\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +18,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Pessoa.cs",
-              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Pessoa.cs",
-              "RelativeDocumentMoniker": "ExemploExplorando\\Models\\Pessoa.cs",
-              "ToolTip": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Pessoa.cs",
-              "RelativeToolTip": "ExemploExplorando\\Models\\Pessoa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAbAAAA",
+              "Title": "Venda.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Venda.cs",
+              "RelativeDocumentMoniker": "ExemploExplorando\\Models\\Venda.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\Venda.cs",
+              "RelativeToolTip": "ExemploExplorando\\Models\\Venda.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:45:07Z",
+              "WhenOpened": "2024-05-01T22:46:20.208Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LeituraArquivo.cs",
-              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\LeituraArquivo.cs",
-              "RelativeDocumentMoniker": "ExemploExplorando\\Models\\LeituraArquivo.cs",
-              "ToolTip": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\LeituraArquivo.cs",
-              "RelativeToolTip": "ExemploExplorando\\Models\\LeituraArquivo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:16:19.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExemploExcecao.cs",
-              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\ExemploExcecao.cs",
-              "RelativeDocumentMoniker": "ExemploExplorando\\Models\\ExemploExcecao.cs",
-              "ToolTip": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Models\\ExemploExcecao.cs",
-              "RelativeToolTip": "ExemploExplorando\\Models\\ExemploExcecao.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T20:40:38.426Z"
             },
             {
               "$type": "Document",
@@ -74,7 +41,7 @@
               "RelativeDocumentMoniker": "ExemploExplorando\\Program.cs",
               "ToolTip": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\Program.cs",
               "RelativeToolTip": "ExemploExplorando\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T12:37:14.234Z",
               "EditorCaption": ""

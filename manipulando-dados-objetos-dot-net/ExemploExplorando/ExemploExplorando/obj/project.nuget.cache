@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IqaeWU4wOTdwcyli6n5Y5cEv+VcMdKLXQDbmMYdkEPY3yfqxLwDxGSMZpgWFXHlCkbJNtdERMpW5/zgJhR92Ng==",
+  "dgSpecHash": "e5R/69eXfE13fY++0jC2vYHHP7w6OwHTnRstdoZ/4QuqXkpCnNoDqZMkYBwXxGtMKzIIJyW7UpsvMd2rX8LfVQ==",
   "success": true,
   "projectFilePath": "D:\\repositories\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\ExemploExplorando\\ExemploExplorando\\ExemploExplorando.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\rodri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
