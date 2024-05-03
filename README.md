@@ -47,7 +47,7 @@ __2. [Desafio de Fundamentos](https://github.com/RodrigoRamone7/trilha-net-funda
     - [x] Manipulando Valores com C#
     - [x] Exceções e Coleções com C#
     - [x] Tuplas, Operador Ternário e Desconstrução de um Objeto com C#
-    - [ ] Nuget, Serializar e Atributos no C#
+    - [x] Nuget, Serializar e Atributos no C#
     - [ ] Construindo um Sistema de Hospedagem de um Hotel no C#
     - [ ] Desafios de Código Coding The Future Avanade ll
 

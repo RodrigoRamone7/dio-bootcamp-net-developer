@@ -1,5 +1,68 @@
 # Manipulação de Dados e Objetos com .NET
-
+---
+## Índice
+- [Propriedades](#propriedades)
+  * [Propriedades de uma classe](#propriedades-de-uma-classe)
+  * [Modificadores de acesso](#modificadores-de-acesso)
+    + [Tabela de modificadores de acesso](#tabela-de-modificadores-de-acesso)
+  * [Validações GET e SET](#valida-es-get-e-set)
+    + [Criando uma validação](#criando-uma-valida-o)
+    + [Validação GET](#valida-o-get)
+    + [Validação SET](#valida-o-set)
+    + [Body Expressions](#body-expressions)
+- [Métodos](#m-todos)
+  * [Assinatura de método](#assinatura-de-m-todo)
+  * [Tipos de retorno](#tipos-de-retorno)
+    + [Método sem retorno](#m-todo-sem-retorno)
+    + [Método com retorno](#m-todo-com-retorno)
+- [Construtores](#construtores)
+  * [Criando um construtor](#criando-um-construtor)
+  * [Construtor com argumentos](#construtor-com-argumentos)
+- [Manipulando valores](#manipulando-valores)
+  * [Concatenação](#concatena-o)
+  * [Interpolação](#interpola-o)
+  * [Formatando valores monetários](#formatando-valores-monet-rios)
+    + [Formatação monetária de outra região](#formata-o-monet-ria-de-outra-regi-o)
+  * [Formatação personalizada](#formata-o-personalizada)
+    + [Formatando casas decimais](#formatando-casas-decimais)
+    + [Formatando porcentagem](#formatando-porcentagem)
+  * [Formatação do tipo DateTime](#formata-o-do-tipo-datetime)
+    + [Formatando data e hora](#formatando-data-e-hora)
+    + [Somente data ou hora](#somente-data-ou-hora)
+    + [Conversões no DateTime](#convers-es-no-datetime)
+      - [Parse](#parse)
+      - [TryParse](#tryparse)
+      - [Validando o TryParse](#validando-o-tryparse)
+- [Exceções](#exce-es)
+  * [Realizando leitura de um arquivo](#realizando-leitura-de-um-arquivo)
+  * [Disparando e tratando uma exceção](#disparando-e-tratando-uma-exce-o)
+  * [Exceção genérica e específica](#exce-o-gen-rica-e-espec-fica)
+    + [Genérica](#gen-rica)
+    + [Específica](#espec-fica)
+    + [Bloco finally](#bloco-finally)
+  * [Exceção Throw](#exce-o-throw)
+- [Coleções](#cole-es)
+  * [Filas](#filas)
+  * [Pilhas](#pilhas)
+  * [Dicionários](#dicion-rios)
+    + [Removendo elementos](#removendo-elementos)
+    + [Alterando elementos](#alterando-elementos)
+    + [Verificando chave existente](#verificando-chave-existente)
+- [Tuplas, Operador ternário e Desconstrução de Objeto](#tuplas-operador-tern-rio-e-desconstru-o-de-objeto)
+  * [Sintaxe de uma tupla](#sintaxe-de-uma-tupla)
+  * [Tuplas em métodos](#tuplas-em-m-todos)
+  * [Descartes](#descartes)
+  * [Desconstrutor](#desconstrutor)
+  * [Operador ternário](#operador-tern-rio)
+- [Nuget, Serializar e Atributos](#nuget-serializar-e-atributos)
+  * [Nuget](#nuget)
+    + [Instalando pacotes](#instalando-pacotes)
+      - [Visual Studio](#visual-studio)
+        * [Gerenciar Pacotes NuGet](#gerenciar-pacotes-nuget)
+        * [Console Gerenciador de Pacotes](#console-gerenciador-de-pacotes)
+    + [Serialização de dados](#serializa-o-de-dados)
+      - [JSON](#json)
+      - [Pacote Newtonsoft](#pacote-newtonsoft)
 ---
 
 ## Propriedades
@@ -344,12 +407,20 @@ No exemplo acima, declaramos uma variável booleana `ePar` que receberá um test
 
 ## Nuget, Serializar e Atributos
 
+### Nuget
 __O que é um pacote?__
 Um pacote é um conjunto de códigos úteis, que possibilita o compartilhamento e reuso de código.
 
-### Nuget
 Nuget é um gerenciador de pacotes para .NET que auxiliam o desenvolvedor com pacotes de códigos prontos para fazer determinadas funções que algum outro desenvolvedor já escreveu.
 [Pacotes Nuget](https://www.nuget.org/)
+
+#### Pacote Newtonsoft
+
+O pacote Newtonsoft é um dos mais utilizados no mundo para transformar objetos em formato `.json`.
+
+![Utilizando pacote Newtonsoft](images/nuget-serializacao-newtonsoft.png)
+Digitando `using Newtonsoft.Json` podemos então utilizar a classe `JsonConvert` que possui o método `.SerializeObject` que serializa um objeto intanciado dentro do programa para um arquivo JSON.
+O método recebe o primeiro parâmetro que será o objeto a ser serializado e possui sobrecarga para formatação `Formatting.Idented`.
 
 #### Instalando pacotes
 
@@ -388,11 +459,11 @@ No Visual Studio podemos instalar por meio do gerenciador de pacotes da própria
 
 ![Cole no Console Gerenciador de Pacotes](images/nuget-console-gerenciador-1.png)
 
-#### Serialização de dados
+### Serialização
 
 A serialização consiste em transformar objetos de um programa em bytes para que possam persistir em algum tipo de arquivo, espaço na memória ou banco de dados.
 
-##### JSON
+#### JSON
 JavaScript Notation Object é um formato de texto que segue a sintaxe Javascript, muito usado para transmitir dados entre aplicações.
 
     {
@@ -401,10 +472,60 @@ JavaScript Notation Object é um formato de texto que segue a sintaxe Javascript
         "Preco": 10.50
     }
 
-##### Pacote Newtonsoft
 
-O pacote Newtonsoft é um dos mais utilizados no mundo para transformar objetos em formato `.json`.
 
-![Utilizando pacote Newtonsoft](images/nuget-serializacao-newtonsoft.png)
-Digitando `using Newtonsoft.Json` podemos então utilizar a classe `JsonConvert` que possui o método `.SerializeObject` que serializa um objeto intanciado dentro do programa.
-O método recebe o primeiro parâmetro que será o objeto a ser serializado e possui sobrecarga para formatação `Formatting.Idented`.
+#### Salvando um objeto serializado
+
+Após o objeto ser serializado, podemos salva-lo para que este arquivo persista no sistema ou seja compartilhado com seu cliente.
+
+![Salvando objeto serializado](images/nuget-salvando-serializado.png)
+No exemplo acima, utilizamos a classe `File` e o método `.WriteAllText()` para salvar o arquivo. O método recebe dois parâmetros, o caminho e a variável a ser salva.
+
+![Salvando uma lista de objetos](images/nuget-salvando-lista.png)
+Também é possível salvar uma lista de objetos passando como parâmetro uma lista ao invés de uma única variável.
+
+#### [JSON Viewer](https://codebeautify.org/jsonviewer)
+
+O Code Beautify possui uma ferramente de validação de JSON que auxilia na visualização de arquivos JSON.
+
+#### DateTime em JSON
+
+A classe `DateTime` obtem informações de hora do sistema, mas esta classe está presente somente no C#, porém, esses dados devem ser lidos por qualquer sistema, para isso existe a __ISO 8601__ que padroniza o formato de data e hora para que seja possível a leitura em qualquer linguagem de programação.
+
+    [
+      {
+        "Id": 1,
+        "Produto": "Material de escritório",
+        "Preco": 25.00,
+        "DataVenda": "2024-05-03T15:40:16.7978875-03:00"
+      },
+      {
+        "Id": 2,
+        "Produto": "Licença de Software",
+        "Preco": 110.00,
+        "DataVenda": "2024-05-03T15:40:16.7978875-03:00"
+      }
+    ]
+
+#### Deserializando um objeto
+
+Ao receber um arquivo JSON, é preciso primeiramente analizar este arquivo para saber como está o formato dos objetos e assim construir uma classe baseada nestes objetos contidos em JSON.
+
+![Deserializando um objeto](images/nuget-deserializacao.png)
+Por meio do Método `.DeserializeObject` passamos o parâmetro de lista `<List<Venda>>(conteudoArquivo)` para que a classe `JsonConvert` faça a deserialização dos objetos para dentro de uma variável lista criada dentro do programa.
+
+### Atributos
+
+Quando ocorre o compartilhamento de arquivos, pode acontecer do nome de uma propriedade ser diferente do que está no arquivo que foi lido.
+
+Por exemplo uma propriedade em JSON escrita como `Nome_Produto`, porém a convenção de sintaxe do C# determina que nome de propriedades deve ser utilzado o CamelCase, portanto o nome da propriedade não deve ser escrito desta forma.
+
+Caso o nome da propriedade seja diferente entre classe e JSON, o C# não vai deserializar esta propriedade.
+
+#### Metadados com Newtonsoft
+
+Podemos por meio do pacote Newtonsoft dizer para a classe em C# que queremos determinada propriedade seja atribuida de outra com nome diferente.
+
+![Atributos em JSON](images/atributo-newtonsoft.png)
+Para isso devemos utilizar o pacote `Newtonsoft.Json` dentro da classe e declarar qual propriedade do JSON será atribuida a proriedade da classe.
+No exemplo acima, estamos obtendo a propriedade `[JsonProperty("Nome_Produto")]` do arquivo JSON e atribuindo a propriedade `Produto` da classe. Note que são duas propriedades de nomes diferentes.
