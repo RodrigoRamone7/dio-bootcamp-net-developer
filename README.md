@@ -41,15 +41,15 @@ __2. [Desafio de Fundamentos](https://github.com/RodrigoRamone7/trilha-net-funda
     - [x] Desafios de Código Coding The Future Avanade l
     - [x] Construindo um Sistema para um Estacionamento com C#
 
-- [ ] __*Manipulando Dados e Objetos com .NET*__
+- [x] __*Manipulando Dados e Objetos com .NET*__
 
     - [x] Propriedades, Métodos e Construtores com C#
     - [x] Manipulando Valores com C#
     - [x] Exceções e Coleções com C#
     - [x] Tuplas, Operador Ternário e Desconstrução de um Objeto com C#
     - [x] Nuget, Serializar e Atributos no C#
-    - [ ] Construindo um Sistema de Hospedagem de um Hotel no C#
-    - [ ] Desafios de Código Coding The Future Avanade ll
+    - [x] Construindo um Sistema de Hospedagem de um Hotel no C#
+    - [x] Desafios de Código Coding The Future Avanade ll
 
 - [ ] __*Programação Orientada a Objetos com C#*__
 
