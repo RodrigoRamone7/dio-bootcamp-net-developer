@@ -53,8 +53,8 @@ __2. [Desafio de Fundamentos](https://github.com/RodrigoRamone7/trilha-net-funda
 
 - [ ] __*Programação Orientada a Objetos com C#*__
 
-    - [ ] Introdução, Abstração e Encapsulamento com C#
-    - [ ] Herança e Polimorfismo com C#
+    - [x] Introdução, Abstração e Encapsulamento com C#
+    - [x] Herança e Polimorfismo com C#
     - [ ] Classes Abstratas e Interfaces com C#
     - [ ] Criando um Sistema e Abstraindo um Celular com POO em C#
     - [ ] Desafios de Código Coding The Future Avanade lll

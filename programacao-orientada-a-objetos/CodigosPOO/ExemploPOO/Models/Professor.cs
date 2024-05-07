@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace ExemploPOO.Models
 {
-    internal class Pessoa
+    internal class Professor : Pessoa
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
+        public decimal Salario { get; set; }
 
-        public virtual void Apresentar()
+        public override void Apresentar()
         {
             Console.WriteLine($"Olá! Meu nome é {Nome}");
-            Console.WriteLine($"E tenho {Idade} anos");
+            Console.WriteLine($"E meu salário é R${Salario}");
         }
     }
 }

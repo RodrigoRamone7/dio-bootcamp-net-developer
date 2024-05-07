@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\CodigosPOO\\ExemploPOO\\ExemploPOO.csproj",
+      "projectUniqueName": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\ExemploPOO.csproj",
       "projectName": "ExemploPOO",
-      "projectPath": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\CodigosPOO\\ExemploPOO\\ExemploPOO.csproj",
+      "projectPath": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\ExemploPOO.csproj",
       "packagesPath": "C:\\Users\\Impressão\\.nuget\\packages\\",
-      "outputPath": "G:\\repositorios\\dio-bootcamp\\manipulando-dados-objetos-dot-net\\CodigosPOO\\ExemploPOO\\obj\\",
+      "outputPath": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Impressão\\AppData\\Roaming\\NuGet\\NuGet.Config",
