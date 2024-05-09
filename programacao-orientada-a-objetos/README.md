@@ -76,3 +76,73 @@ Consiste em sobrescrever métodos existentes em classes pai. Este depende de her
 
 ![Override/Late Binding](images/polimorfismo-override-late-binding.png)
 __Override/Late Binding__
+
+---
+
+## Classe abstrata
+Uma classe abstrata tem como objetivo ser exclusivamente um modelo para ser herdado, portanto não pode ser instanciada.
+
+Você pode implementar métodos ou deixá-los a cargo de quem herdar.
+
+![Classe abstrata](images/classe-abstrata-exemplo.png)
+Podemos notar que diferente de uma classe comum, a classe abstrata utiliza a palavra reservada `abstract`, o que a torna uma classe que somente pode ser herdada e jamais poderá ser instanciada diretamente.
+O mesmo acontece com o método `Creditar()`. Podemos notar que o método não possui corpo, pois o mesmo deverá ser implementado pela classe filha da qual herdará este método.
+
+### Sobrescrevendo método
+
+![Classe corrente](images/classe-abstrata-corrente.png)
+Como declarado na classe pai, o método `Creditar()` deve obrigatóriamente ser implementado pela classe filha.
+Por conta do modificador de acesso `protected` declarado na classe pai, a propriedade `saldo` pode ser modificada pela classe `Corrente`, funcionando de forma parecida que o modificador `private` mas permitindo que classes filha possam alterar tais atributos.
+
+### Construtor por herança
+Quando uma classe possui um construtor este passa a ser obrigatório para as classes filhas, fazendo com que ele precise ser declarado no código das classes filhas.
+
+![Construtor por herança](images/classe-abstrata-construtor.png)
+No exemplo acima temos o construtor para que `nome` seja uma propriedade obrigatória na instanciação da classe pessoa.
+
+![Construtor por herança filho](images/classe-abstrata-construtor-filho.png)
+A classe `Aluno` é uma classe filha de `Pessoa` então para isso ela deve possuir um construtor para que `nome` seja atribuido como propriedade.
+Utilizamos `Aluno(string nome) : base(nome)` para que todo o código do construtor da classe pai seja atribuido a classe filha, neste caso, o código `Nome = nome` da classe `Pessoa` passará a ser o comportamento da classe filha.
+
+## Classe Selada
+
+Ao contrário da classe abstrata uma classe selada não pode ser herdada por outras classes, portanto, uma vez definida uma classe selada nenhuma outra classe pode ser filha.
+O mesmo também pode ocorrer para métodos. Um método selado não pode ser sobrescrito por classes filhas.
+
+![Classe Selada](images/classe-selada.png)
+No exemplo acima, temos a palavra reservada `sealed` que define que esta classe não pode ser herdada por outras classes.
+Utilizamos este modificador de acesso quando esta for a instancia final da classe.
+
+![Método Selado](images/classe-selada-metodo.png)
+O mesmo pode ser feito em métodos, definindo o mesmo comportamento de uma classe selada.
+
+## Classe object
+
+A classe System.Object é a mãe de todas as classes na hierarquia do .NET.
+Todas as classes derivam, direta ou indiretamente da classe Object, e ela tem como objetivo prover serviços de baixo nível para suas classes filhas.
+
+### Métodos
+A classe object por servir como base para todas as classes carrega junto com ela métodos que todo objeto instanciado vai possuir por padrão.
+
+#### Tabela de métodos da classe object
+
+| Métodos | Descrição |
+| --- | --- |
+| Equals(Object) | Determina se o objeto especificado é igual ao objeto atual. |
+| Equals(Object, Object) | Determina se as instâncias de objeto especificadas são consideradas iguais. |
+| Finalize() | Permite que um objeto tente liberar recursos e executar outras operações de limpeza antes de ser recuperado pela coleta de lixo.
+| GetHashCode() | Serve como função de hash padrão. |
+| GetType() | Obtem o Type da instância atual |
+| MemberwiseClone() | Cria uma cópia superficial do Object atual. |
+| ReferenceEquals(Object, Object) | Determina se as instâncias de Object especificadas são a mesma instância. |
+| ToString() | Retorna uma cadeia de caracteres que representa o objeto atual. |
+
+## Interfaces
+Uma interface é um contrato que pode ser implementado por uma classe.
+É como se fosse uma classe abstrata, podendo definir métodos abstratos para serem implementados.
+Assim como uma classe abstrata, uma interface não pode ser instanciada.
+
+![Interface Calculadora](images/interface-calculadora.png)
+No exemplo acima temos uma interface de calculadora.
+Por convenção, todo nome de classe começa com a letra "I".
+A partir desta interface, classes que herdarem esta interface deverão implementar seus métodos.

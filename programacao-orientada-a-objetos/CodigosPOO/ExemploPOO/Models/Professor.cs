@@ -8,9 +8,13 @@ namespace ExemploPOO.Models
 {
     internal class Professor : Pessoa
     {
+        public Professor(string nome) : base(nome)
+        {
+
+        }
         public decimal Salario { get; set; }
 
-        public override void Apresentar()
+        public sealed override void Apresentar()
         {
             Console.WriteLine($"Olá! Meu nome é {Nome}");
             Console.WriteLine($"E meu salário é R${Salario}");

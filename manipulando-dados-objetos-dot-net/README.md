@@ -94,6 +94,7 @@ Eles são para quando você precisa que a propriedade seja validada antes de ser
 |---|---|
 |`public`|Pode ser acessado por qualquer um do projeto ou fora dele|
 |`private`|Só pode ser acessado pelo método ou classe de mesmo escopo|
+|`protected`|Somente classes filhas podem alterar|
 
 
 ### Validações GET e SET

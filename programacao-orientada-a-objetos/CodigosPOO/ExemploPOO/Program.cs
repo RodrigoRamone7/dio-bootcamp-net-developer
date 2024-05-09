@@ -1,6 +1,20 @@
 ﻿using ExemploPOO.Models;
 
-Aluno a1 = new Aluno();
+/*Computador c = new Computador();
+c.ToString();*/
+
+
+
+
+
+
+
+/*Corrente c1 = new Corrente();
+
+c1.Creditar(500);
+c1.ExibirSaldo();*/
+
+/*Aluno a1 = new Aluno();
 a1.Nome = "Rodrigo";
 a1.Idade = 29;
 a1.Nota = 10;
@@ -10,17 +24,7 @@ Professor p1 = new Professor();
 p1.Nome = "João";
 p1.Idade = 30;
 p1.Salario = 1000;
-p1.Apresentar();
-
-
-
-
-
-
-
-
-
-
+p1.Apresentar();*/
 
 /*ContaCorrente c1 = new ContaCorrente(123, 1000);
 
