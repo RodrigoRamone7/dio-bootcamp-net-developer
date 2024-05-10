@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{FD6B5865-8F76-49F6-A526-5F5B4B4BA76D}|ExemploPOO\\ExemploPOO.csproj|solutionrelative:exemplopoo\\interfaces\\icalculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FD6B5865-8F76-49F6-A526-5F5B4B4BA76D}|ExemploPOO\\ExemploPOO.csproj|g:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\codigospoo\\exemplopoo\\models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD6B5865-8F76-49F6-A526-5F5B4B4BA76D}|ExemploPOO\\ExemploPOO.csproj|solutionrelative:exemplopoo\\models\\calculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD6B5865-8F76-49F6-A526-5F5B4B4BA76D}|ExemploPOO\\ExemploPOO.csproj|g:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\codigospoo\\exemplopoo\\exemplopoo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{FD6B5865-8F76-49F6-A526-5F5B4B4BA76D}|ExemploPOO\\ExemploPOO.csproj|solutionrelative:exemplopoo\\exemplopoo.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -26,8 +30,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calculadora.cs",
+              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\Models\\Calculadora.cs",
+              "RelativeDocumentMoniker": "ExemploPOO\\Models\\Calculadora.cs",
+              "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\Models\\Calculadora.cs",
+              "RelativeToolTip": "ExemploPOO\\Models\\Calculadora.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T18:51:03.796Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,27 +53,26 @@
               "RelativeDocumentMoniker": "ExemploPOO\\Interfaces\\ICalculadora.cs",
               "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\Interfaces\\ICalculadora.cs",
               "RelativeToolTip": "ExemploPOO\\Interfaces\\ICalculadora.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T19:43:16.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExemploPOO",
+              "DocumentIndex": 2,
+              "Title": "ExemploPOO.csproj",
               "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\ExemploPOO.csproj",
               "RelativeDocumentMoniker": "ExemploPOO\\ExemploPOO.csproj",
               "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\ExemploPOO.csproj",
               "RelativeToolTip": "ExemploPOO\\ExemploPOO.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-09T19:42:51.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T19:42:51.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Computador.cs",
               "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\Models\\Computador.cs",
               "RelativeDocumentMoniker": "ExemploPOO\\Models\\Computador.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "ExemploPOO\\Models\\Computador.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:28:58.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-09T14:28:58.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-orientada-a-objetos\\CodigosPOO\\ExemploPOO\\Program.cs",
               "RelativeDocumentMoniker": "ExemploPOO\\Program.cs",
@@ -77,8 +92,7 @@
               "RelativeToolTip": "ExemploPOO\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T11:21:55.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T11:21:55.75Z"
             }
           ]
         }

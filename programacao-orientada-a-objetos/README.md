@@ -116,6 +116,8 @@ Utilizamos este modificador de acesso quando esta for a instancia final da class
 ![Método Selado](images/classe-selada-metodo.png)
 O mesmo pode ser feito em métodos, definindo o mesmo comportamento de uma classe selada.
 
+---
+
 ## Classe object
 
 A classe System.Object é a mãe de todas as classes na hierarquia do .NET.
@@ -137,12 +139,27 @@ A classe object por servir como base para todas as classes carrega junto com ela
 | ReferenceEquals(Object, Object) | Determina se as instâncias de Object especificadas são a mesma instância. |
 | ToString() | Retorna uma cadeia de caracteres que representa o objeto atual. |
 
+---
+
 ## Interfaces
 Uma interface é um contrato que pode ser implementado por uma classe.
 É como se fosse uma classe abstrata, podendo definir métodos abstratos para serem implementados.
 Assim como uma classe abstrata, uma interface não pode ser instanciada.
 
+### Declarando interface
 ![Interface Calculadora](images/interface-calculadora.png)
 No exemplo acima temos uma interface de calculadora.
 Por convenção, todo nome de classe começa com a letra "I".
 A partir desta interface, classes que herdarem esta interface deverão implementar seus métodos.
+
+### Implementando interface
+![Implementando interface](images/interface-implementado.png)
+Note que ao declarar a herança, é apresentado um erro que obriga que sejam implementados os métodos declarados na interface. No caso do método `Somar()` já temos ele implementado então não ocorre erro.
+
+![Implementando interface](images/interface-implementado%201.png)
+Clicando na lampada, podemos selecionar a opção `Implementar a interface` para que a IDE automaticamente implemente os métodos da interface, sendo necessário apenas a escrita do código facilitando o desenvolvimento.
+
+### Método padrão na interface
+
+![Método Padrão](images/interface-metodo-padrao.png)
+Quando implementamos um método dentro da interface, temos então um método padrão, que caso não seja implementado ao ser declarada a herança, será implementado o método escrito na interface.
