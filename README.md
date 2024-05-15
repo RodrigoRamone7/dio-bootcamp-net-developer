@@ -51,13 +51,13 @@ __2. [Desafio de Fundamentos](https://github.com/RodrigoRamone7/trilha-net-funda
     - [x] Construindo um Sistema de Hospedagem de um Hotel no C#
     - [x] Desafios de Código Coding The Future Avanade ll
 
-- [ ] __*Programação Orientada a Objetos com C#*__
+- [x] __*Programação Orientada a Objetos com C#*__
 
     - [x] Introdução, Abstração e Encapsulamento com C#
     - [x] Herança e Polimorfismo com C#
-    - [ ] Classes Abstratas e Interfaces com C#
-    - [ ] Criando um Sistema e Abstraindo um Celular com POO em C#
-    - [ ] Desafios de Código Coding The Future Avanade lll
+    - [x] Classes Abstratas e Interfaces com C#
+    - [x] Criando um Sistema e Abstraindo um Celular com POO em C#
+    - [x] Desafios de Código Coding The Future Avanade lll
 
 - [ ] __*Programação De APIs Com Bando de Dados*__
 

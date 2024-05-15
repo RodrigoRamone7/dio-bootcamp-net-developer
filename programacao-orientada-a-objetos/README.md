@@ -1,3 +1,29 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Programação Orientada a Objeto](#programação-orientada-a-objeto)
+   * [Paradigma de Programação Orientada a Objeto (POO)](#paradigma-de-programação-orientada-a-objeto-poo)
+      + [Abstração](#abstração)
+      + [Encapsulamento](#encapsulamento)
+      + [Herança](#herança)
+      + [Polimorfismo](#polimorfismo)
+         - [Preparando o Polimorfismo](#preparando-o-polimorfismo)
+         - [Sobrescrevendo método](#sobrescrevendo-método)
+         - [Polimorfismo em tempo de compilação](#polimorfismo-em-tempo-de-compilação)
+         - [Polimorfismo em tempo de execução](#polimorfismo-em-tempo-de-execução)
+   * [Classe abstrata](#classe-abstrata)
+      + [Sobrescrevendo método](#sobrescrevendo-método-1)
+      + [Construtor por herança](#construtor-por-herança)
+   * [Classe Selada](#classe-selada)
+   * [Classe object](#classe-object)
+      + [Métodos](#métodos)
+         - [Tabela de métodos da classe object](#tabela-de-métodos-da-classe-object)
+   * [Interfaces](#interfaces)
+      + [Declarando interface](#declarando-interface)
+      + [Implementando interface](#implementando-interface)
+      + [Método padrão na interface](#método-padrão-na-interface)
+
+<!-- TOC end -->
+
 # Programação Orientada a Objeto
 
 ---
