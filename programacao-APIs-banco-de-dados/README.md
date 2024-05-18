@@ -41,7 +41,7 @@ Um banco de dados funciona de forma stand alone, porém, para que você desenvol
 
 ### Instalação e configuração
 
-#### SQL server
+#### Instalando SQL server
 
 1.  Acesse o site para download do [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 2. Procure pela __Edição especializada gratuita__
@@ -52,9 +52,58 @@ Um banco de dados funciona de forma stand alone, porém, para que você desenvol
 Ao final da instalação será exibida informações úteis para manipulação do banco de dados com o DBMS.
 A informação de `CADEIA DE CONEXÃO` será a informação utilizada para conexão com o banco de dados.
 
-#### Server Management Studio (SSMS)
+#### Configurando SQL server
+
+1. Abra o SQL Server Configuration Manager
+2. Na aba esquerda, clique em __SQL Server Services__
+3. Note que o __SQL Server (SQLEXPRESS)__ está como running
+Isso quer dizer que seu servidor está rodando
+4. Clique duas vezes em __SQL Server (SQLEXPRESS)__
+5. Na aba __Serviços__ troque o __Modo inicial__ para manual
+Isso vai te dar controle sobre o estado do banco de dados
+
+![SQL server](images/sql-server-manager.png)
+
+#### Instalando Server Management Studio (SSMS)
 
 1. Acesse o site para download do [SSMS](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
 2. Vá a até a sessão __Baixar o SSMS__
 3. Clique em __Baixar o SSMS (SQL Server Management Studio)__
 4. Siga os passos do instalador
+
+#### Configurando SSMS
+
+1. Em __Tipo de servidor__ utilize o Mecanismo de Banco de Dados
+2. Em __Nome do servidor__ troque para `localhost\sqlexpress`
+Que foi o SQL server que instalamos anteriormente
+3. Em __Autenticação__ podemos utilizar a Autenticação do Windows padrão
+*Caso precise acessar de maneira externa será necessário utilizar a __Autenticação do SQL Server__ com login e senha*
+4. Em __Criptografia__ troque para Opcional
+
+![SQL server](images/sql-server-manager-config.png)
+
+---
+
+## Structured Query Language (SQL)
+
+É a linguagem de banco de dados usada para consulta e manipulação de dados. A linguagem SQL na maioria dos casos é utilizada em todos os bancos de dados, portanto, aprendendo em um banco de dados, será possível utilizar este conhecimento em todos os outros.
+
+![Comandos SQL](images/comandos-sql.png)
+
+### Database
+É uma coleção de dads estruturados, agrupados de forma concisa. É composto de tabelas, procedures, views, etc.
+![database](images/database.png)
+Um banco de dados pode conter vários databases destinado a vários sistemas. Eles separam as tabelas de dados para que possam ser acessados de diferentes aplicações, além de especificar o banco que a aplicação irá trabalhar, será necessário especificar também qual database será acessado.
+
+#### Criando um Database
+
+1. No SSMS, clique com o botão direito do mouse em __Banco de dados__
+![Novo database](images/criando-database.png)
+2. Clique em __Novo banco de dados__
+![Criando novo database](images/criando-database-novodb.png)
+3. Dê um nome para o Banco de dados e clique em OK
+![Nome da database](images/criando-database-nome.png)
+
+#### Fazendo uma consulta
+Ao selecionar um database podemos abrir uma __Nova Consulta__.
+![Consulta no banco de dados](images/database-consulta.png)
