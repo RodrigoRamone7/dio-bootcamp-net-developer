@@ -90,12 +90,12 @@ Que foi o SQL server que instalamos anteriormente
 
 ![Comandos SQL](images/comandos-sql.png)
 
-### Database
+### Banco de dados
 É uma coleção de dads estruturados, agrupados de forma concisa. É composto de tabelas, procedures, views, etc.
 ![database](images/database.png)
 Um banco de dados pode conter vários databases destinado a vários sistemas. Eles separam as tabelas de dados para que possam ser acessados de diferentes aplicações, além de especificar o banco que a aplicação irá trabalhar, será necessário especificar também qual database será acessado.
 
-#### Criando um Database
+#### Criando um Banco de dados
 
 1. No SSMS, clique com o botão direito do mouse em __Banco de dados__
 ![Novo database](images/criando-database.png)
@@ -104,6 +104,179 @@ Um banco de dados pode conter vários databases destinado a vários sistemas. El
 3. Dê um nome para o Banco de dados e clique em OK
 ![Nome da database](images/criando-database-nome.png)
 
+##### ID
+Todo dado dentro de um banco de dados tem um ID único, que garante que cada dado inserido dentro do banco de dados seja único.
+
+![ID único](images/database-id.png)
+Note que mesmo que façamos a remoção de um dado e inserirmos ele normamente, ele não será o mesmo ID, pois este é incrementado sempre que um novo dado é inserido no banco de dados.
+
 #### Fazendo uma consulta
 Ao selecionar um database podemos abrir uma __Nova Consulta__.
 ![Consulta no banco de dados](images/database-consulta.png)
+
+Fique atento para qual banco de dados sua consulta está apontando.
+![Exemplo DB](images/nova-consulta-sql.png)
+Sempre que se conectar novamente ao banco de dados, a Query pode estar apontando para a master, então ocorrerá um erro caso você faça uma nova consulta. Portanto atente-se para onde a sua query está apontando sempre que se conectar ao Banco de dados.
+
+##### SELECT
+O comando `SELECT` servirá para selecionar uma tabela do banco de dados. Desse modo será feita uma consulta pela tabela especificada após o comando `FROM`. O `*` Representa todas as colunas da tabela.
+
+![Select](images/comandos-sql-select.png)
+Ao executar o comando digitado, será exibida uma *Result Grid* com o conteúdo da tabela.
+
+![Selecionando Colunas](images/comandos-sql-order-select.png)
+Para selecionar colunas específicas do banco de dados, no lugar do `*` especifique o nome das colunas que deseja selecionar.
+
+##### ORDER BY
+
+O comando `ORDER BY` é responsável por ordenar a tabela em ordem crescente por padrão.
+
+![Ordenando nome](images/comandos-sql-order-by.png)
+
+Podemos também utilizar o comando `DESC` para ordenar a tabela por ordem descrescente.
+
+![Ordenando nome](images/comandos-sql-order-by-desc.png)
+
+Também é possível ordenar através de várias colunas, colocando as colunas desejadas separadas por vírgula.
+
+![Ordenando várias](images/comandos-sql-order-by-sobrenome.png)
+Com este comando será ordenada a coluna de nome por ordem crescente e a coluna sobrenome logo em seguida. Neste exemplo ele ordenará os sobrenomes na ordem crescente após ordenar os nomes, no caso de existirem nomes repetidos.
+
+##### WHERE
+Em alguns casos queremos que sejam exibidos apenas dados específicos, para isso utilizamos a clausula `WHERE`.
+
+![Comando where](images/comandos-sql-where.png)
+No exemplo acima filtramos o nome Ana e ele trouxe somente o nome especificado na coluna Nome. __*Em SQL sempre será utilizado áspas simples para escrever strings.*__
+
+###### AND e OR
+![Where And](images/comandos-sql-where-and.png)
+Caso seja necessário mais de um filtro, a clausua `AND` é utilizada para declarar uma outra coluna da qual o filtro obterá informações.
+
+![Where Or](images/comandos-sql-where-or.png)
+Assim como na lógica de programação o `OR` também pode ser utilizado.
+
+###### LIKE
+![Where like](images/comandos-sql-where-like.png)
+Quando precisamos que a pesquisa seja não somente de um nome específico, mas sim de um nome que comece com uma letra específica, utilizamos o `LIKE` no lugar do `=`, que irá procurar por dados que comecem com a letra especificada.
+O sinal de `%` após a letra significa que o filtro especificado trará somente o que começa com a letra G ignorando o que vier após ela. Utilizando o sinal `%` antes e depois desta forma `%G%`, será mostrado qualquer dado que contenha a letra G independente da localização dentro da string.
+
+##### INSERT
+![Insert Into](images/comandos-sql-insert.png)
+Quando queremos inserir dados numa tabela utilizamos o comando `INSERT INTO` especificando a tabela logo em seguida e as colunas a serem inseridas. Após o comando `INSERT` devemos especificar o valor a ser inserido com `VALUES` especificando entre `()` os valores a serem inseridos __na ordem especificada anteriormente__.
+O comando `GETDATE()` é uma função que captura a data atual. O banco de dados por se tratar de uma tabela estruturada, não aceitará que você insira um dado que não obedece a especificação dada no momento de sua criação, portanto, __*caso você tente inserir um dado que não seja o esperado, o banco retornará um erro.*__
+
+![Omitindo colunas](images/comandos-sql-insert-omitido.png)
+Também podemos inserir os valores diretamente omitindo a declaração das colunas, porém, __*será necessário obedecer a ordem correta das colunas*__. É util para resumir a declaração de inserção no banco de dados.
+
+##### UPDATE
+Quando precisamos fazer uma atualização, como a mundança de um email no banco de dados, utilizamos o comando `UPDATE`. Este comando atualiza a informação desejada através da clausula `SET`.
+
+![Atualizando informação](images/comandos-sql-update.png)
+__*É muito importante que seja feita a atualização pelo `id`, pois sem ele você poderá alterar dados que não correspondem ao dado requisitado. Caso não fosse declarado o `WHERE` nesta atualização, as duas linhas com nome `Rodrigo` teriam seu email atualizado.*__
+
+###### JAMAIS FAÇA UM UPDATE SEM WHERE
+
+##### DELETE
+
+Quando precisamos deletar um dado de uma tabela, utilizamos o comando `DELETE` seguido do `WHERE` para especificar o que será deletado.
+
+![Delete com id](images/comandos-sql-delete.png)
+No exemplo acima deletamos o dado de id 52 que correspondia ao mesmo dado de id 51. Neste caso tinhamos um dado duplicado.
+
+###### JAMAIS FAÇA UM DELETE SEM WHERE
+
+#### Criando uma tabela
+
+A criação de uma tabela pode ser feita utilizando o comando `CREATE TABLE` e em seguida declarando seu nome e tipos de dados de irão conter na tabela.
+
+![Criando uma tabela](images/criando-tabela.png)
+Note que nos campos onde criamos as colunas, primeiro inserimos o nome da coluna, o seu tipo e entre `()` está o tamanho daquele campo.
+
+##### PRIMARY KEY
+
+A clausula `PRIMARY KEY` vai garantir que o campo será único.
+
+![PRIMARY KEY](images/criando-tabela-primary-key.png)
+No exemplo acima especificamos que o campo Id terá sempre um valor único.
+
+##### IDENTITY
+
+A clausula `IDENTITY` é onde especificamos que este campo será gerenciado pelo próprio banco de dados. Toda tabela deve ter uma coluna de Id, mas ela não é obrigatória ao inserir dados na tabela.
+
+![IDENTITY](images/criando-tabela-identity.png)
+Entre `()` colocamos o valor inicial e qual será o incremento deste campo. Neste caso ele se inicia em 1 e incrementa uma inidade a cada campo adicionado.
+
+##### NULL e NOT NULL
+
+As clausulas `NULL` e `NOT NULL` servem como validações indicando que aquele campo é ou não obrigatório.
+
+![NULL e NOT NULL](images/criando-tabela-null-not-null.png)
+No exemplo acima temos os campos `Cor`, `Tamanho` e `Genero` que podem receber valores vazios no momento da inserção destes dados, caso algum destes não sejam conhecidos no momento de sua insenção no banco de dados.
+
+
+#### Tipos de Dados SQL Server
+
+##### Tipos de Dados numéricos
+
+| Tipo de Dados   | Descrição |
+|-----------------|------------|
+| `bit`           | Pode armazenar 1, 0 ou NULL. |
+| `tinyint`       | Armazena números inteiros de 0 a 255. |
+| `smallint`      | Armazena números inteiros de -32.768 a 32.767. |
+| `int`           | Armazena números inteiros de -2.147.483.648 a 2.147.483.647. |
+| `bigint`        | Armazena números inteiros de -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807. |
+| `decimal(p,s)`  | Armazena números fixos e flutuantes. A precisão (p) pode ser de 1 a 38 e a escala (s) de 0 a p. |
+| `numeric(p,s)`  | Funcionalmente igual ao `decimal`. |
+| `smallmoney`    | Armazena valores monetários de -214.748,3648 a 214.748,3647. |
+| `money`         | Armazena valores monetários de -922.337.203.685.477,5808 a 922.337.203.685.477,5807. |
+| `float(n)`      | Armazena números flutuantes. O número de bits n define a precisão. |
+| `real`          | Armazena números flutuantes com precisão de 7 dígitos decimais. |
+
+##### Tipos de Dados de Cadeia de Caracteres
+
+| Tipo de Dados   | Descrição |
+|-----------------|------------|
+| `char(n)`       | Armazena uma cadeia de caracteres de comprimento fixo. n pode ser de 1 a 8.000. |
+| `varchar(n)`    | Armazena uma cadeia de caracteres de comprimento variável. n pode ser de 1 a 8.000. |
+| `varchar(max)`  | Armazena uma cadeia de caracteres de comprimento variável. Máximo de 2^31-1 caracteres. |
+| `text`          | Armazena uma cadeia de caracteres de comprimento variável. Máximo de 2.147.483.647 caracteres. |
+
+##### Tipos de Dados de Cadeia de Caracteres Unicode
+
+| Tipo de Dados   | Descrição |
+|-----------------|------------|
+| `nchar(n)`      | Armazena uma cadeia de caracteres Unicode de comprimento fixo. n pode ser de 1 a 4.000. |
+| `nvarchar(n)`   | Armazena uma cadeia de caracteres Unicode de comprimento variável. n pode ser de 1 a 4.000. |
+| `nvarchar(max)` | Armazena uma cadeia de caracteres Unicode de comprimento variável. Máximo de 2^31-1 caracteres. |
+| `ntext`         | Armazena uma cadeia de caracteres Unicode de comprimento variável. Máximo de 1.073.741.823 caracteres. |
+
+##### Tipos de Dados Binários
+
+| Tipo de Dados   | Descrição |
+|-----------------|------------|
+| `binary(n)`     | Armazena dados binários de comprimento fixo. n pode ser de 1 a 8.000. |
+| `varbinary(n)`  | Armazena dados binários de comprimento variável. n pode ser de 1 a 8.000. |
+| `varbinary(max)`| Armazena dados binários de comprimento variável. Máximo de 2^31-1 bytes. |
+| `image`         | Armazena dados binários de comprimento variável. Máximo de 2.147.483.647 bytes. |
+
+##### Tipos de Dados de Data e Hora
+
+| Tipo de Dados   | Descrição |
+|-----------------|------------|
+| `date`          | Armazena uma data. Formato: AAAA-MM-DD. |
+| `datetime`      | Armazena uma data e hora. Formato: AAAA-MM-DD hh:mm:ss[.mmm]. |
+| `datetime2`     | Armazena uma data e hora com precisão adicional. Formato: AAAA-MM-DD hh:mm:ss[.fractional seconds]. |
+| `smalldatetime` | Armazena uma data e hora. Formato: AAAA-MM-DD hh:mm:ss. |
+| `time`          | Armazena uma hora do dia. Formato: hh:mm:ss[.mmm]. |
+| `datetimeoffset`| Armazena uma data e hora com um deslocamento de fuso horário. Formato: AAAA-MM-DD hh:mm:ss[.mmm] {+|-}hh:mm. |
+| `timestamp`     | Armazena um número único que é atualizado sempre que a linha é modificada. |
+
+##### Outros Tipos de Dados
+
+| Tipo de Dados   | Descrição |
+|-----------------|------------|
+| `sql_variant`   | Armazena dados de diversos tipos de dados SQL Server, exceto `text`, `ntext`, `image`, `timestamp` e `sql_variant`. |
+| `uniqueidentifier` | Armazena um identificador global exclusivo (GUID). |
+| `xml`           | Armazena dados XML. Máximo de 2^31-1 bytes. |
+| `cursor`        | Armazena uma referência a um cursor utilizado para operações de banco de dados. |
+| `table`         | Armazena um conjunto de resultados para processamento posterior. |
