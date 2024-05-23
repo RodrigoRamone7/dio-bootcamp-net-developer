@@ -41,7 +41,7 @@ Um banco de dados funciona de forma stand alone, porém, para que você desenvol
 
 ### Instalação e configuração
 
-#### Instalando SQL server
+#### Instalando SQL server Express
 
 1.  Acesse o site para download do [SQL Server](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 2. Procure pela __Edição especializada gratuita__
@@ -280,3 +280,76 @@ No exemplo acima temos os campos `Cor`, `Tamanho` e `Genero` que podem receber v
 | `xml`           | Armazena dados XML. Máximo de 2^31-1 bytes. |
 | `cursor`        | Armazena uma referência a um cursor utilizado para operações de banco de dados. |
 | `table`         | Armazena um conjunto de resultados para processamento posterior. |
+
+#### Built-in functions
+Built-in functions são funções pré-existentes que auxiliam na manipulação de dados, como por exemplo contar, somar, média, etc...
+
+##### COUNT
+A função `COUNT` servirá para contar a quantidade de linhas de uma tabela que atendem a determinada condição.
+Em alguns casos podemos querer que o banco de dados retorne apenas a quantidade de linhas contidas na tabela. Podemos sim fazer um `SELECT` simples, mas quando temos um banco com milhões de linhas, trazer todas as informações contidas nessas linhas seria um desperdício de recurso de processamento.
+
+![COUNT linhas](images/built-in-functions-count.png)
+No exemplo acima utilizamos o `COUNT(*)` para que seja retornado apenas a quantidade de linhas contida no banco, neste caso, 35 linhas.
+
+![COUNT linhas com nome](images/built-in-functions-count-nome.png)
+Podemos também dar nome a coluna que retorna para tornar a query mais clara.
+
+##### SUM
+A função `SUM` do SQL serve para somar valores numéricos contidos em uma coluna do banco de dados.
+
+![SUM de preço](images/built-in-functions-sum.png)
+No exemplo acima somamos primeiro os valores de todas as linhas da coluna preço, também fizemos outra query que utiliza o `WHERE` para somar todos os preços de produtos do tamanho M.
+
+##### MIN, MAX e AVG
+As funções `MIN MAX AVG` são utilizadas para retornar o menor valor, maior valor e a média de valores contido na tabela.
+
+![MIN, MAX, AVG](images/built-in-functions-min-max-avg.png)
+No exemplo acima temos o maior valor de tamanho M contido na tabela, o menor valor da coluna de preços em geral e a média dos valores de preço.
+
+##### Concatenando Colunas
+Em alguns casos queremos que o banco de dos retorne valores de uma coluna concatenados com outra coluna. Podemos utilizar no comando `SELECT` o sinal de concatenação `+` para fazer a junção de dados de diferentes colunas.
+
+![Concatenando Colunas](images/built-in-functions-concat.png)
+No exemplo acima concatenamos a coluna Nome com a Coluna Cor e um texto entre elas. O retorno foi uma coluna de nome `NomeProduto` com as respectivas colunas concatenadas.
+
+##### Upper e Lower
+Podemos fazer tratamentos no texto que é retornado pelo banco de dados utilizando a função `UPPER()` para transformar tudo em maiúsculo e `LOWER()` para transformar tudo em minusculo.
+
+![Upper e Lower](images/built-in-functions-upper-lower.png)
+No exemplo acima utilzamos o `UPPER` para retornar dados de nome em maiúsculo e o `LOWER` transformar dados de cor em minúsculo.
+
+##### Adicionando uma nova coluna
+Podemos adicionar colunas a uma tabela de duas maneiras. Por meio de script e por meio visual. É recomendável que sempre seja inserido por script.
+
+###### Adicionando coluna de maneira visual
+
+1. Navegue pelo seu banco de dados até a tabela desejada
+2. Clique com o botão direito na tabela a ser adicionada a coluna
+3. Clique na opção __Design__
+![Design de tabele](images/built-in-functions-adicionando-coluna-visual.png)
+4. Digite o Nome da coluna, seu tipo e se é nullable abaixo da última coluna existente na tabela
+![Design de tabele](images/built-in-functions-adicionando-coluna-visual-1.png)
+5. Pressione __ctrl + S__ para salvar
+
+__*Para deletar uma coluna*__
+1. Clique com o botão direito na setinha preta da coluna a ser deletada
+2. Clique em __Excluir Coluna__
+![Deletando coluna](images/built-in-functions-deletando-coluna.png)
+3. Pressione __ctrl + S__ para salvar
+
+###### Adicionando coluna por script
+Adicionar uma coluna por script é muito simples e requer apenas alguns comandos.
+![Adicionando coluna por script](images/built-in-functions-adicionando-coluna-script.png)
+Utilizamos o comando `ALTER TABLE` para indicar que faremos uma alteração na tabela. Em seguida utilizamos o `ADD` seguido do nome da coluna e seu tipo.
+
+__*Para deletar uma coluna*__
+
+![Deletando coluna](images/built-in-functions-deletando-coluna-script.png)
+Para deletar uma coluna utilizamos para alterar uma tabela e utilizamos o `DROP COLUMN` seguido do nome da coluna.
+
+##### FORMAT
+Podemos utilizar a função `FORMAT()` para formatar dados do tipo `DATETIME` por exemplo.
+
+![Formatando datetime](images/built-in-functions-formatando-datetime.png)
+No exemplo acima formatamos o `DATETIME2` adicionado anteriormente para o padrão brasileiro de data. Agit  função `FORMAT()` recebe a coluna a ser formatada e a formatação desejada como argumento separado por vírgula.
+__A sintaxe de formatação é bem parecida com o C#.__
