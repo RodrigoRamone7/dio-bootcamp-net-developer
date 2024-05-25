@@ -281,7 +281,9 @@ No exemplo acima temos os campos `Cor`, `Tamanho` e `Genero` que podem receber v
 | `cursor`        | Armazena uma referência a um cursor utilizado para operações de banco de dados. |
 | `table`         | Armazena um conjunto de resultados para processamento posterior. |
 
-#### Built-in functions
+#### Manipulando dados
+
+##### Built-in functions
 Built-in functions são funções pré-existentes que auxiliam na manipulação de dados, como por exemplo contar, somar, média, etc...
 
 ##### COUNT
@@ -353,3 +355,54 @@ Podemos utilizar a função `FORMAT()` para formatar dados do tipo `DATETIME` po
 ![Formatando datetime](images/built-in-functions-formatando-datetime.png)
 No exemplo acima formatamos o `DATETIME2` adicionado anteriormente para o padrão brasileiro de data. Agit  função `FORMAT()` recebe a coluna a ser formatada e a formatação desejada como argumento separado por vírgula.
 __A sintaxe de formatação é bem parecida com o C#.__
+
+##### Group By
+Podemos fazer agrupamentos com base em determinadas condições. A clausula `GROUP BY` pode ser utilizada para agrupar essas informações trazidas do banco de dados.
+
+![Group By](images/built-in-functions-group-by.png)
+No exemplo acima, podemos ver que primeiro selecionamos o tamanho e utilizamos o `COUNT()` para contar a quantidade de cada agrupamento. A clausula `GROUP BY` recebe o tamanho e nos retorna a quantidade de cada tamanho de roupa contida no banco de dados.
+__Observe que temos um dado em branco, isso acontece por conta de um dado no banco que não possui informação de tamanho especificada.__
+
+![Group By where](images/built-in-functions-group-by-where.png)
+Podemos utilizar a clausula `WHERE` com o sinal de `<>` que indica é diferente e uma condição de string vazia `''` que indica que tudo que estiver fazio na coluna tamanho não será retornado pelo banco. Também pode ser utilizado com a clausula `ORDER BY` para ordenar pela quantidade.
+
+__*Esteja atendo para a ordem das querys. Um `ORDER BY` não pode vir antes de um `GROUP BY` para que não ocorra erros lógicos na execução da query.*__
+
+##### Primary Key e Foreign Key
+São valores utilizados para identificação de registro de uma tabela e também entre tabelas.
+
+![Primary Key e Foreign Key](images/built-in-functions-primary-key-foreign-key.png)
+Estas chaves vão servir para que uma tabela interaja com a outra. Quando temos uma tabela de clientes por exemplo, este recebe um ID único que pode ser registrado numa tabela de endereços de forma que relaciona aquele endereço com o cliente.
+
+###### Criando uma tabela de endereços com Foreign Key
+__1. Definindo uma Primary Key__
+1. Na tabela clientes que já criamos anteriormente
+2. Navegue até ela no banco de dados e clique com o botão direito do mouse
+3. Selecione a opção __Design__
+4. Clique com o botão direito do mouse na chave que deseja transfomar em primary key
+![Definindo primary key](images/built-in-functions-primary-key-definicao.png)
+5. Clique em __Definir Chave Primária__
+6. Pressione __Ctrl + S__ para salvar
+
+__2. Criando uma tabela com Foreign Key__
+![Criando tabela com Foreign Key](images/built-in-functions-foreign-key.png)
+Uma chave estrangeira sempre será uma `CONSTRAINT`, ou seja, uma restrição.
+A clausula vem acompanhada de seu nome e sua definição como `FOREIGN KEY` que recebe como argumento a coluna que será armazenada a chave.
+A clausula `REFERENCES` fará referencia a onde estes dados serão capturados, neste caso, de `Clientes(Id)` fazendo refernência ao Id da tabela Clientes.
+
+![Tabela referenciada](images/built-in-functions-foreign-key-definida.png)
+Então após fazer a inserção de um dado na tabela de endereços, passamos para ela o Id correspondente na tabela Clientes. Agora a tabela de endereço possui um dado que referencia por meio da chave estrangeira a qual cliente ela faz referencia.
+
+##### JOIN
+Podemos notar que sempre que fazemos um `SELECT` em uma tabela o banco retorna para nós as informações solicitadas, sendo assim necessário um `SELECT` para cada tabela que queremos consultar.
+
+![JOIN em tabelas](images/built-in-functions-join.png)
+Podemos utilizar a clausula `INNER JOIN` para juntar a tabela `Enderecos` na tabela `Clientes` por meio da clausula `ON` passando para ela o `Clientes.Id` como refência da foreign key `Enderecos.IdClientes`.
+Executando a query com o `WHERE` podemos ver que o banco retornou o valor correspondente da tabela Clientes e logo em seguida os dados da tabela Endereco.
+Dessa forma o banco entende que deve juntar toda informação correspondente a `Clientes.Id` igual a `Enderecos.IdCliente` assim relacionando as tabelas.
+
+![Join Personalizado](images/built-in-functions-join-personalizado.png)
+Podemos então fazer um `SELECT` dos dados contidos em duas tabelas e o banco nos retornará apenas uma linha pois fizemos um `JOIN` delas.
+
+###### Outros tipos de JOIN
+![Outros tipos de JOIN](images/built-in-functions-join-outros.png)
