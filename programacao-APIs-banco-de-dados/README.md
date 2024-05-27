@@ -406,3 +406,88 @@ Podemos então fazer um `SELECT` dos dados contidos em duas tabelas e o banco no
 
 ###### Outros tipos de JOIN
 ![Outros tipos de JOIN](images/built-in-functions-join-outros.png)
+
+---
+
+## APIs e Entity Framework
+
+### O que é uma API
+Uma API (Application Programming Inferface) é uma forma de comunicação entre computadores ou programas de computadores.
+Em outras palavras, é um software que fornece informações para outro software.
+
+![Definição de API](images/api-definicao.png)
+Um dos exemplos mais difundidos sobre o que é uma API é de um restaurante. A API, como demonstrado na imagem, é como um garçom que faz a interação do cliente com a cozinha, ou seja, leva seu pedido até o banco de dados, o banco processa esses dados e entrega para a API a informação processada sem que você veja todo esse funcionamento.
+
+### Exemplo de APIs
+
+#### Nager.Date
+A [Nager.Date](https://date.nager.at/) é uma API que contém todos so feriados de cada país organizados em seus respectivos dias do ano.
+Suponhamos que você tenha uma aplicação que conta dias úteis para dar um prazo de entrega para um cliente. Teriamos de catalogar cada feriado manualmente dentro da aplicação desenvolvida e isso levaria muito tempo, para isso temos APIs que facilitam esse processo.
+
+##### Utilizando a API
+Podemos sempre acessar o site do Nager.Date para ver os feriados, mas no caso de uma aplicação, esta deve acessar de maneira que você não precise estar entrando no site e procurando por cada feriado.
+Para isso utilizamos a [Holiday API](https://date.nager.at/Api). Nesta página podemos ver a documentação de como é feita a utilização desta API.
+
+![Exemplo de requisição](images/api-date-nager-request-exemple.png)
+Na sessão __Request Example__ podemos ver um exemplo de como é feita a requisição na API e seu retorno será um arquivo JSON com todos os feriados presentes no país e ano requisitados a ela.
+
+![Feriados do Brasil](images/api-date-nager-request-br.png)
+Podemos observar que no link acima solicitamos para a API os feriados de 2024 no Brasil e ela nos retorna um arquivo que para o usuário não terá sentido algum, mas para a aplicação que o usuário estará utilizando fará total sentido.
+
+Toda API possui uma documentação explicando a forma como o desenvolvedor deve se comunicar com ela. No caso da Date.Nager a documentação deixa bem claro que devemos passar o `{Year}/{CountryCode}` no link da requisição para que ela retorne os dados esperados. Caso essa regra não seja respeitada a API retornará um erro.
+
+#### Dog CEO
+A [Dog CEO](https://dog.ceo/) é uma coleção de imagens de cachorro open source. Ela é utilizada para retornar uma imagem de cachorro aleatória sempre que é feita uma requisição
+
+##### Utilizando a API
+
+Em [Dog API](https://dog.ceo/dog-api/) teremos acesso a documentação da API e como é feita a sua utilização.
+
+![Utilizando a Dog API](images/api-dog-ceo-api.png)
+Podemos observar que a API recebe uma requisição assim como nos exemplos anteriores e retorna um JSON com o link da imagem solicitada e o status.
+
+### Criando a nossa API
+
+No Visual Studio temos a nossa disposição modelos de projeto para a criação de APIs.
+__*Verifique se você instalou o pacote de desenvolvimento web junto ao seu Visual Studio.*__
+
+1. Crie um novo projeto *API Web do ASP.NET Core*
+2. Dê um nome ao seu projeto e defina um diretório para ele
+3. Defina a versão do .NET que será utilizada e mantenha os marcadores padrão selecionados
+![Criando API](images/api-criando-api.png)
+Você terá uma tela de projeto semelhante a esta
+
+Nesta pasta `Controllers` é um exemplo de API que já vem carregada no modelo de projeto, parecido com quando criamos um `HelloWorld`.
+
+![Exemplo de API](images/api-exemplo.png)
+
+Executando este código, será aberto uma página web no navegador em localhost com um front-end em swagger com uma breve documentação do que esta API faz.
+
+![API em swagger](images/api-swagger.png)
+Nem toda API possui um Swagger. Ele facilita muito na documentação quando está ligado a API, mas nem sempre o teremos como padrão em todos os projetos.
+__*APIs não têm interface pois trabalham diretamente com dados, então seus retornos são sempre dados processados em algum banco ou em qualquer aplicação back-end.*__
+
+#### Controllers
+
+APIs trabalham com requisições HTTP e as controllers são classes responsáveis por agrupar suas requisições HTTP e disponibilizar os seus Endpoints.
+
+##### Criando um Controlador Vazio
+
+1. Clicando com o botão direito do mouse em __Controllers__
+2. Navegue até adicionar e clique em __Controlador__
+![Criando Constrolador](images/api-controller-criando.png)
+3. Selecione __Comum__, __API__ e __Controlador API - Vazio__
+![Controlador API Vazio](images/api-controller-api-comum.png)
+4. Dê um nome ao seu controlador e clique em adicionar
+![Nomeie o controlador](images/api-controller-controlador-vazio.png)
+5. Será criado um controlador vázio com as configurações básicas que um controlador precisa para funcionar
+![Controlador](images/api-controller-controlador-criado.png)
+Tal controlador ainda não faz nada, precisamos implementar um código para que ele faça alguma coisa.
+
+##### Criando Método que retorna Data e Hora
+![Retornando Data e Hora](images/api-controller-implementando-metodo.png)
+No código acima criando um método `IActionResult`(Interface Action Result) chamado `ObterDataHora()` que retorna um objeto anônimo em `return Ok(obj)`.
+A linha `[HttpGet("ObterDataHoraAtual")]` é responsável por guardar o nome de como este método poderá ser chamado pela minha API.
+
+![Controlador no Swagger](images/api-controller-controlador-usuario.png)
+Note que se rodarmos a API no Swagger novamente, teremos agora a sessão `Usuario` funcionando conforme o código que escrevemos acima.
