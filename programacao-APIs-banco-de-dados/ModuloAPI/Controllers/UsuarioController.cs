@@ -13,7 +13,7 @@ namespace ModuloAPI.Controllers
             var obj = new
             {
                 Data = DateTime.Now.ToLongDateString(),
-                Hora = DateTime.Now.ToShortDateString(),
+                Hora = DateTime.Now.ToShortTimeString(),
             };
 
             return Ok(obj);
