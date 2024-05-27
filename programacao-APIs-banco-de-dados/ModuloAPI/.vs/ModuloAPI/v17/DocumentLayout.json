@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\",
+  "WorkspaceRootPath": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|g:\\repositorios\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|d:\\repositories\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\moduloapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|solutionrelative:moduloapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|d:\\repositories\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|g:\\repositorios\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|d:\\repositories\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|g:\\repositorios\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|d:\\repositories\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,39 +31,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ModuloAPI",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\ModuloAPI.csproj",
+              "RelativeDocumentMoniker": "ModuloAPI.csproj",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\ModuloAPI.csproj",
+              "RelativeToolTip": "ModuloAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-27T23:13:05.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T19:52:04.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T18:43:14.313Z"
+              "WhenOpened": "2024-05-27T18:43:14.313Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T17:57:58.577Z"
+              "WhenOpened": "2024-05-27T17:57:58.577Z",
+              "EditorCaption": ""
             }
           ]
         }

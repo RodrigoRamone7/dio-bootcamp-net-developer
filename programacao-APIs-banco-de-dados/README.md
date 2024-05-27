@@ -486,8 +486,53 @@ Tal controlador ainda não faz nada, precisamos implementar um código para que 
 
 ##### Criando Método que retorna Data e Hora
 ![Retornando Data e Hora](images/api-controller-implementando-metodo.png)
-No código acima criando um método `IActionResult`(Interface Action Result) chamado `ObterDataHora()` que retorna um objeto anônimo em `return Ok(obj)`.
+No código acima criamos um método `IActionResult`(Interface Action Result) chamado `ObterDataHora()` que retorna um objeto anônimo em `return Ok(obj)`.
 A linha `[HttpGet("ObterDataHoraAtual")]` é responsável por guardar o nome de como este método poderá ser chamado pela minha API.
 
 ![Controlador no Swagger](images/api-controller-controlador-usuario.png)
-Note que se rodarmos a API no Swagger novamente, teremos agora a sessão `Usuario` funcionando conforme o código que escrevemos acima.
+Note que se rodarmos a API no Swagger novamente, teremos agora a sessão `Usuario` funcionando conforme o código que escrevemos acima. Conforme está dentro do projeto, a pasta Controllers é onde ficam guardados os caminhos e sempre que criamos um novo controller o swagger o reconhece automaticamente.
+
+##### Endpoint com parâmetro
+
+Podemos criar Endpoints com parâmetros que recebem valores a serem tratados dentro de nossa API.
+
+![Endpoint com retorno](images/api-endpoint-retorno.png)
+No exemplo acima escrevemos uma função `Apresentar`  que recebe uma string como parâmetro. No nome de chamada `[HttpGet("Apresentar/{nome}")]` da API fica definido entre `{}` onde este parâmetro será colocado no momento em que a função é chamada pela API.
+
+![Requisição no Swagger](images/api-endpoint-swagger.png)
+Se voltarmos ao swagger teremos agora o método `Apresentar/{nome}` exige que um nome seja passado para que a requisição seja feita.
+
+### Entity Framework e CRUD
+O Entity Framework(EF) é um framework ORM(Object-Relational Mapping) criado para facilitar a integração com o banco de dados, mapeando tabelas e gerando comando SQL de forma automática.
+
+![Entity Framework](images/entity-framework.png)
+Quando vamos escrever um código que faz um processamento no banco de dados, precisamos sempre saber a linguagem do banco e também escrever  cada query manualmente, pois o C# não sabe em qual linguagem aquele banco foi escrito.
+Para temos o Entity framework que automatiza essas consultas e inserções no banco de dados, sem que precisemos escrever uma única query em  SQL.
+
+#### Entendendo o CRUD
+Um CRUD é um acrônimo para as consultas mais comuns presentes na maioria dos bancos de dados.
+
+| CRUD | Comando |
+|-|-|
+| C | CREATE (Insert) |
+| R | READ (Select) |
+| U | UPDATE (Update) |
+| D | DELETE (Delete) |
+
+Essas quatro operações sempre estarão presentes na maioria dos bancos de dados, portanto é muito comum se ver artigos e tutoriais de CRUD de C# com SQL server por exemplo.
+
+#### Instalando o Entity Framework
+
+1. No terminal da sua IDE, digite `dotnet tool install --global dotnet-ef`
+2. No gerenciador de pacotes NuGet, procure por `Microsoft.EntityFrameworkCore.Design`
+3. Selecione o projeto que o pacote será instalado e clique em instalar
+![Instalando Pacote Entity](images/entity-framework-pacote-nuget.png)
+4. Procure novamente por `Microsoft.EntityFrameworkCore.SQLServer`
+5. Selecione o projeto novamente e instale o pacote
+__*Fique atento a versão do .NET que está utilizando, pode ser necessária a utilização de outra versão do pacote compatível com a versão do seu .NET*__
+
+A ferramenta que instalamos no __*Passo 1*__ somente é necessário instalar uma vez, já o pacote deve ser instalado em todo projeto do qual queremos utilizar o Entity Framework.
+Para cada banco que dados que estamos trabalhando, teremos um pacote diferente. No nosso caso estamos utilizando o Microsoft SQL Server.
+
+![Entity Framework no Csproj](images/entity-framework-cjproj.png)
+Podemos conferir se os pacotes foram instalados corretamente no arquivo .cjproj do projeto.
