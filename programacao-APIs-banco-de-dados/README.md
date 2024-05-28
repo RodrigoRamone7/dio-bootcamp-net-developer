@@ -631,3 +631,64 @@ Clicando em execute teremos as responses da nossa API confirmando que os dados f
 
 ![Contato no Banco de dados](images/entity-framework-controller-select-db.png)
 Ao fazer um SELECT no banco de dados vamos encontrar nosso contato adicionado com sucesso pelo EF.
+
+##### Alterando o endpoint Create
+
+![Endpoint create alterado](images/entity-framework-controller-create-createdat.png)
+Podemos mudar o tipo de retorno do endpoint create para que ele nos retorne o id criado no momento em que inserimos um novo contato no banco de dados.
+
+![Location no swagger](images/entity-framework-controller-create-location.png)
+Ao criar um novo contato com nosso endpoint, ele nos retorna um `https://localhost:7257/api/Contato/5` para que possamos acessar diretamente o contato criado.
+
+#### Criando um endpoint de Select por ID
+
+![Obter contato por ID](images/entity-framework-controller-select-id.png)
+Dentro do `ContatoController.cs` escrevemos o método `ObterPorId(int id)` conforme podemos ver na imagem acima. Tal método recebe um id e retorna por meio do `_context.Contatos.Find(id)` o nosso contato salvo no banco de dados. Fizemos também uma validação para caso seja solicitado um id inválido, ele retornará `NotFound()`.
+
+![Obtendo contato no swagger](images/entity-framework-controller-select-swagger.png)
+Se voltarmos ao swagger teremos mais um endpoint GET agora para obter o contato do banco de dados por meio do ID.
+
+#### Criando um endpoint de Update
+
+![Fazendo update em contato](images/entity-framework-controller-update.png)
+No código acima temos um endpoint `Atualizar(int id, Contato contato)` recebendo o id que será modificado e um JSON com as informações a serem atualizadas.
+O EF vai procurar o id fornecido no banco de dados e armazena-lo na variável `contatoBanco`.
+Nas linhas 49 a 51 o contato que o EF trouxe do banco recebe as novas informações fornecidas para o método.
+Assim como no endpoint select que fizemos anteriormente, faremos um `.Update()` e um `.SaveChanges()`, por fim retornando um `Ok()`.
+
+![Update no swagger](images/entity-framework-controller-update-swagger.png)
+Voltando ao swagger teremos agora um novo endpoint PUT que nos solicita o id e possui um request body com o JSON que será a modificação que desejamos fazer no banco de dados.
+
+![Response body](images/entity-framework-controller-update-response.png)
+Ao executarmos teremos o response body indicando nossa alteração no banco de dados. Também podemos executar o endpoint de select escrito anteriormente para consultar esta mudança no banco de dados.
+
+#### Criando um endpoint de Delete
+
+![Fazendo delete em contato](images/entity-framework-controller-delete.png)
+No código acima temos o método `Deletar(int id)` que recebe o id do banco e reaproveitamos aquela mesma validação para verificar se o id existe no banco.
+Utilizamos na linha 69 o método `Remove()` passando como parâmetro o `contatoBanco` e salvamos as alterações na linha 70.
+Por fim retornamos um `NoContent()` que indica que não temos conteúdo.
+
+![Delete no swagger](images/entity-framework-controller-delete-swagger.png)
+Ao retornarmos ao swagger teremos o novo endpoint DELETE que possui uma requisição de id para deletar a informação do banco de dados. Como definimos no cotroller, esta operação não retorna nenhum conteúdo mas a operação foi feita com sucesso.
+
+#### Incrementando o enpoint Select por nome
+
+![Fazendo um select por Nome](images/entity-framework-controller-select-nome.png)
+No código acima temos o método `ObterPornome(string nome)` recebendo uma string que pode ser o nome completo ou apenas uma letra.
+Ao invés do método `.Find()` que utilizamos no método `ObterPorid()`, aqui utilizamos o método `Where()` recebendo como parâmetro `x => x.Nome.Contains(nome)`, pois dessa forma se conter o nome completo ou apenas uma letra será retornado tudo o que corresponder a `nome` dentro do banco de dados.
+
+![Endpoint por nome no Swagger](images/entity-framework-controller-select-nome-swagger.png)
+Retornando ao swagger teremos um novo endpoint GET que requer agora uma string nome e como podemos observar, ao digitar apenas `r` ele retorna 2 contatos pois ambos atendem a string passada para o endpoint.
+
+### Verbos HTTP
+
+Os verbos HTTP estão relacionados ás ações da sua API no banco de dados.
+
+| Verbo HTTP | Operação CRUD | Descrição                         |
+|------------|---------------|-----------------------------------|
+| GET        | Read          | Recuperar recursos                |
+| POST       | Create        | Criar um novo recurso             |
+| PUT        | Update/Replace| Atualizar um recurso existente    |
+| PATCH      | Update/Modify | Atualizar parcialmente um recurso |
+| DELETE     | Delete        | Deletar um recurso                |

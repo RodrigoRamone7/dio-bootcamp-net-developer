@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\",
+  "WorkspaceRootPath": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|g:\\repositorios\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|d:\\repositories\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|solutionrelative:controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|g:\\repositorios\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|d:\\repositories\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|d:\\repositories\\dio-bootcamp\\programacao-apis-banco-de-dados\\moduloapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81870C23-A740-47A7-9EE3-F79ACE571856}|ModuloAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,18 +25,27 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-28T21:58:39.121Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ContatoController.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\ContatoController.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\ContatoController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContatoController.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\ContatoController.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Controllers\\ContatoController.cs",
               "RelativeToolTip": "Controllers\\ContatoController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAmwBgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T19:20:33.502Z",
               "EditorCaption": ""
@@ -41,9 +54,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "G:\\repositorios\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\programacao-APIs-banco-de-dados\\ModuloAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
