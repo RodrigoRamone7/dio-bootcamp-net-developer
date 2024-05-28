@@ -536,3 +536,98 @@ Para cada banco que dados que estamos trabalhando, teremos um pacote diferente. 
 
 ![Entity Framework no Csproj](images/entity-framework-cjproj.png)
 Podemos conferir se os pacotes foram instalados corretamente no arquivo .cjproj do projeto.
+
+#### Criando a classe entidade
+
+Vamos criar uma pasta no nosso projeto chamada `Entities` que indica que tudo dentro dela se refere a uma tabela do nosso banco de dados.
+![Entidades](images/entity-framework-criando-entidade.png)
+
+Criamos uma classe `Contato` nesta pasta que servirá como um espelho para criação de uma tabela no banco de dados.
+![Classe Contato](images/entity-framework-contato.png)
+
+#### Criando Contexto
+
+Vamos criar uma pasta no nosso projeto chamada `Context` onde estarão nossas classes que centralizam nossas informações em determinado banco de dados.
+![Criando contexto](images/entity-framework-context.png)
+
+Criamos uma classe `AgendaContext` é onde faremos o contexto de configuração com o banco de dados utilizando o Entity Framework.
+![Contexto de agenda](images/entity-framework-agenda-context.png)
+Nesta classe herdamos a classe `DbContext` do EF, definimos um contrutor com parâmetro `DbContextOptions<AgendaContext> options` onde receberá nossa conexão com o banco e será passado pelo `base(options)` herdado para o nosso `DbContext`.
+Por fim definimos uma propriedade que se refere a nossa entidade `Contato` por meio de um `DbSet`, onde será referenciado a criação da nossa tabela no banco de dados.
+
+#### Configurando Conexão
+
+Dentro do nosso projeto temos dois arquivos JSON chamados `appsettings.json` e `appsettings.Development.json`.
+![App settings](images/entity-framework-appsettings.png)
+A principal diferença entre esses dois arquivos é que o `appsettings.json` define configurações para ambiente de produção, portanto toda configuração feita neste arquivo será levada para o deploy da sua API.
+Já o arquivo `appsettings.Development.json` define configurações para ambiente de desenvolvimento, onde temos configurações referentes a este contexto.
+
+![Configurando Conexão](images/entity-framework-configurando-conexao.png)
+No nosso arquivo `appsettings.Development.json` vamos criar uma nova chave `ConnectionStrings`, dentro dela criaremos uma chave `ConexaoPadrao` fazendo referencia ao banco de dados SQL Express que criamos anteriormente.
+__*Lembre-se de verificar se o banco de dados está operando no SQL Server Configuration Manager*__
+Em `Server=` colocamos o endereço do banco de dados que será acessado pela nossa API.
+Em `Initial Catalog=` definimos qual será a nossa tabela do banco de dados. *Esta ainda não foi criada, mas ficará a cargo do EF cria-la em nosso banco.*
+Em `Integrated Security=` definimos nossa autenticação, que neste caso é a nossa autenticação integrada do windows mesmo.
+__*Esta configuração serve para o SQL Server Express, caso esteja utilizando outro banco de dados, será outra configuração diferente.*__
+
+![Configurando Program.cs](images/entity-framework-configurando-program.png)
+Em nosso arquivo `Program.cs` vamos configurar nosso contexto e o EF nas linhas 1 e 2.
+Na linha 7 e 8 definimos nosso `builder.Services.AddDbContext` passando para ele a nossa `AgendaContext`.
+Nos parâmetros definimos as opções utilizando `.UseSqlServer()` para definir que utilizamos o SQL Server e como parâmetro dela utilizamos nossa conexão com o banco de dados escrita lá no nosso arquivo `appsettings.Development.json` por meio do método `GetConnectionString()`.
+
+#### Migrations
+
+O EF gera os comandos SQL de maneira dinâmica, porém, os comandos de criação de tabelas precisam ser feitos de maneira manual. Não necessáriamente você precisará escrever os comandos em SQL, mas precisamos dizer para o EF que as alterações no nosso código precisam ser refletidas no banco de dados.
+Conforme criamos anteriormente o contexto `AgendaContext.cs`, tudo que estiver como `DbSet<>` será transformado em uma tabela no banco de dados.
+As migrations servem para mapear nossas classes e transformá-las em tabelas no banco de dados.
+
+##### Criando uma migration
+
+__*Certifique-se primeiramente que seu banco de dados esteja rodando.*__
+
+1. No terminal da sua IDE digite `dotnet-ef migrations add CriacaoTabelaContato`
+*O nome após o `add` pode ser o nome que Desejar*
+2. Pressione enter e note que foi criado um novo diretório `Migrations` dentro do projeto
+![Diretório Migrations](images/entity-framework-migrations.png)
+
+Os arquivos criados no diretório `Migrations` são os comandos SQL gerados automaticamente pelo EF.
+![Migration Up](images/entity-framework-migrations-up.png)
+Note que dentro do arquivo principal temos um método `Up()` responsável pela criação da tabela. Podemos observar que o EF identificou nossa classe `Contato.cs`, relacionou suas propriedades com os respectivos tipos no banco de dados e podemos notar que seu `name: ` está no plural, pois o EF identifica que uma tabela no banco de dados sempre receberá mais de um dado.
+
+![Migration Down](images/entity-framework-migrations-down.png)
+Também no mesmo arquivo temos um método `Down()` que é responsável por deletar a tabela do banco de dados.
+
+##### Aplicando uma migration
+
+__*Certifique-se primeiramente que seu banco de dados esteja rodando.*__
+
+1. No terminal de sua IDE Digite `dotnet-ef database update`
+2. Pressione enter e note que foram executados uma série de comandos no console
+![Migrations no console](images/entity-framework-migrations-console.png)
+
+Após estes passos será criada uma tabela no nosso banco de dados.
+![Tabela criada no banco de dados](images/entity-framework-migrations-aplicada.png)
+No SQL Server Management Studio podemos observar que foi criado um novo banco `Agenda` e uma tabela `Contatos` no banco de dados, conforme criado em nosso código C# sem que fosse necessário escrever uma única linha de código em SQL.
+
+#### Criando uma Controller e o Endpoint de Create
+
+Vamos criar uma nova classe controller para adicionar contatos na nossa tabela.
+
+![Contato Controller](images/entity-framework-controller-create.png)
+No código acima temos uma classe controller que possui um contexto privado `private reandonly AgendaContext _context;`, que por um contrutor recebe o contexto do tipo `AgendaContext`.
+Criamos um método `Create()` que recebe um parâmetro do tipo `Contato` definido pela nossa entidade.
+Tal método faz um `.Add()` recebendo um contato como parâmetro, salva as alterações com `.SaveChanges()` e retorna o contato em `Ok(contato)`.
+Por fim definimos o controlador como `[HttpPost]`, pois este faz uma alteração no banco de dados ao invés de trazer dados dele.
+
+Feito isso, se rodarmos nossa API lá no swagger, podemos notar que temos um novo método.
+![Controller Contato](images/entity-framework-controller-contato.png)
+Note que diferente dos controllers definidos anteriormente, este novo controller está na cor verde e é do tipo POST.
+
+![Request Body](images/entity-framework-controller-request-body.png)
+Ao clicar em Try Out, o swagger vai nos mostrar um campo em formato JSON para que possamos preencher com as informações que definimos na nossa entidade `Contato.cs`. *Podemos omitir o id pois se trata de uma chave primária.*
+
+![Responses](images/entity-framework-controller-responses.png)
+Clicando em execute teremos as responses da nossa API confirmando que os dados foram gravados no banco de dados pelo EF.
+
+![Contato no Banco de dados](images/entity-framework-controller-select-db.png)
+Ao fazer um SELECT no banco de dados vamos encontrar nosso contato adicionado com sucesso pelo EF.
