@@ -648,6 +648,15 @@ Dentro do `ContatoController.cs` escrevemos o método `ObterPorId(int id)` confo
 ![Obtendo contato no swagger](images/entity-framework-controller-select-swagger.png)
 Se voltarmos ao swagger teremos mais um endpoint GET agora para obter o contato do banco de dados por meio do ID.
 
+##### Incrementando o enpoint Select por nome
+
+![Fazendo um select por Nome](images/entity-framework-controller-select-nome.png)
+No código acima temos o método `ObterPornome(string nome)` recebendo uma string que pode ser o nome completo ou apenas uma letra.
+Ao invés do método `.Find()` que utilizamos no método `ObterPorid()`, aqui utilizamos o método `Where()` recebendo como parâmetro `x => x.Nome.Contains(nome)`, pois dessa forma se conter o nome completo ou apenas uma letra será retornado tudo o que corresponder a `nome` dentro do banco de dados.
+
+![Endpoint por nome no Swagger](images/entity-framework-controller-select-nome-swagger.png)
+Retornando ao swagger teremos um novo endpoint GET que requer agora uma string nome e como podemos observar, ao digitar apenas `r` ele retorna 2 contatos pois ambos atendem a string passada para o endpoint.
+
 #### Criando um endpoint de Update
 
 ![Fazendo update em contato](images/entity-framework-controller-update.png)
@@ -672,15 +681,6 @@ Por fim retornamos um `NoContent()` que indica que não temos conteúdo.
 ![Delete no swagger](images/entity-framework-controller-delete-swagger.png)
 Ao retornarmos ao swagger teremos o novo endpoint DELETE que possui uma requisição de id para deletar a informação do banco de dados. Como definimos no cotroller, esta operação não retorna nenhum conteúdo mas a operação foi feita com sucesso.
 
-#### Incrementando o enpoint Select por nome
-
-![Fazendo um select por Nome](images/entity-framework-controller-select-nome.png)
-No código acima temos o método `ObterPornome(string nome)` recebendo uma string que pode ser o nome completo ou apenas uma letra.
-Ao invés do método `.Find()` que utilizamos no método `ObterPorid()`, aqui utilizamos o método `Where()` recebendo como parâmetro `x => x.Nome.Contains(nome)`, pois dessa forma se conter o nome completo ou apenas uma letra será retornado tudo o que corresponder a `nome` dentro do banco de dados.
-
-![Endpoint por nome no Swagger](images/entity-framework-controller-select-nome-swagger.png)
-Retornando ao swagger teremos um novo endpoint GET que requer agora uma string nome e como podemos observar, ao digitar apenas `r` ele retorna 2 contatos pois ambos atendem a string passada para o endpoint.
-
 ### Verbos HTTP
 
 Os verbos HTTP estão relacionados ás ações da sua API no banco de dados.
@@ -692,3 +692,80 @@ Os verbos HTTP estão relacionados ás ações da sua API no banco de dados.
 | PUT        | Update/Replace| Atualizar um recurso existente    |
 | PATCH      | Update/Modify | Atualizar parcialmente um recurso |
 | DELETE     | Delete        | Deletar um recurso                |
+
+
+---
+
+## Docker
+
+O Docker é uma plataforma de código aberto que automatiza a implantação de aplicativos dentro de contêineres de software, proporcionando uma camada adicional de abstração e automação de virtualização em nível de sistema operacional. Essencialmente, ele permite que desenvolvedores empacotem uma aplicação junto com todas as suas dependências em um contêiner, garantindo que ela funcione de maneira consistente em qualquer ambiente, seja em uma máquina local, em servidores de desenvolvimento, teste ou produção, ou em nuvens públicas e privadas.
+
+### Para que serve o Docker:
+
+1. __Portabilidade e Consistência:__ Garante que as aplicações rodem da mesma forma em qualquer ambiente, eliminando problemas de compatibilidade entre diferentes máquinas e sistemas operacionais.
+2. __Isolamento:__ Cada contêiner é executado de forma isolada, o que melhora a segurança e evita conflitos entre dependências de diferentes aplicações.
+3. __Eficiência:__ Os contêineres compartilham o mesmo kernel do sistema operacional, o que os torna mais leves e rápidos do que máquinas virtuais tradicionais.
+4. __Facilidade de Desenvolvimento e Integração Contínua:__ Simplifica a criação, teste e implementação de aplicações, facilitando a adoção de práticas de DevOps e integração contínua.
+5. __Escalabilidade:__ Permite escalar aplicações facilmente, adicionando ou removendo contêineres conforme necessário para atender à demanda.
+
+### Instalando o Docker
+
+#### Windows
+
+No windows o Docker pode ser instalado de maneira bem simples pelo seu site.
+
+1. Acesse https://www.docker.com/
+2. Crie uma conta e faça login
+3. Faça download do instalador
+4. Siga os passos da instalação e configuração
+
+#### Linux Ubuntu
+
+No linux teremos várias formas de instalar o Docker que estarão presentes neste em [Install Docker Desktop on Linux](https://docs.docker.com/desktop/install/linux-install/?_gl=1*1nm302d*_ga*MTUzNzUxOTc2Ni4xNzE3MDAwNjc2*_ga_XJWPQMJYHQ*MTcxNzAwMzYwNS4yLjEuMTcxNzAwNDY2Ny41OS4wLjA.)
+
+__*Estaremos utilizando uma versão do Linux Ubuntu 20.04.6 LTS*__
+
+1. Acesse [Este link](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script) para obter os comandos de instalação
+*Estaremos utilizando um script para instalação*
+2. Digite o comando `curl -fsSL https://get.docker.com -o get-docker.sh`
+*Será baixado o script de instalação do docker*
+3. Execute o script com a linha de comando `sudo sh ./get-docker.sh --dry-run`
+4. Aguarde a instalação
+5. Digite `docker version` para verificar se o docker está operando
+6. Digite `systemctl status docker` para verificar o status do docker
+
+### Fazendo download de imagens
+
+Como primeiro exemplo estaremos baixando uma imagem de hello-world para entender melhor o funcionamento.
+
+1. Acesse o [Docker Hub](https://hub.docker.com/)
+2. Procure por Hello-world na barra de pesquisa
+3. Na página da imagem teremos uma linha de código `docker pull hello-world`
+![Imagem Hello world](images/docker-hello-world.png)
+4. Digite este código no terminal do seu servidor
+![Terminal Ubuntu](images/docker-hello-world-terminal.png)
+5. Após a instalação digite `docker images` para ver imagens baixadas
+![Imagens instaladas](images/docker-hello-world-images.png)
+6. Digite `docker run hello-world` para executar o container
+![Executando container](images/docker-hello-world-run.png)
+
+Dessa forma baixamos uma imagem e executamos um container dentro de uma máquina Linux. Tal container é somente um exemplo, portanto ele somente exibe uma mensagem de boas vindas e logo encerra sua execução.
+
+Se digitarmos o comando `docker ps`, podemos observar que nenhum container está em execução.
+![Containers em execução](images/docker-hello-world-docker-ps.png)
+
+Ao digitar o comando `docker ps -a`, será exibido os containers que foram executados anteriormente.
+![Containers executados](images/docker-hello-world-docker-ps-a.png)
+
+Containers podem ter vida curta como o caso do hello-world ou pode permanecer em execução.
+
+### Executando um container
+
+Vamos agora executar um container de sistema operacional no docker.
+
+1. Digite o comando `docker pull ubuntu` e aguarde o download
+![Download da imagem do ubuntu](images/docker-ubuntu.png)
+2. Digite o comando `docker run ubuntu`
+3. Digite o comando `docker ps -a`
+![Containers executados](images/docker-ubuntu-run.png)
+Observe que o container não está em execução, mas foi executado e logo se encerrou.
