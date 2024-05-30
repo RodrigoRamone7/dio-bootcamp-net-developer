@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40728FDF-DE7F-45DD-993A-15553ADC503F}|CalculadoraTest\\CalculadoraTest.csproj|d:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\modulotestesdio\\calculadoratest\\calculadoratests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40728FDF-DE7F-45DD-993A-15553ADC503F}|CalculadoraTest\\CalculadoraTest.csproj|solutionrelative:calculadoratest\\calculadoratests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150E6AA6-1FE1-491E-B23F-65AAD4BF5116}|Calculadora\\Calculadora.csproj|d:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\modulotestesdio\\calculadora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150E6AA6-1FE1-491E-B23F-65AAD4BF5116}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{150E6AA6-1FE1-491E-B23F-65AAD4BF5116}|Calculadora\\Calculadora.csproj|d:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\modulotestesdio\\calculadora\\services\\validacaostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{150E6AA6-1FE1-491E-B23F-65AAD4BF5116}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\services\\validacaostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40728FDF-DE7F-45DD-993A-15553ADC503F}|CalculadoraTest\\CalculadoraTest.csproj|d:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\modulotestesdio\\calculadoratest\\validacoesstringtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40728FDF-DE7F-45DD-993A-15553ADC503F}|CalculadoraTest\\CalculadoraTest.csproj|solutionrelative:calculadoratest\\validacoesstringtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 170,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ValidacoesStringTests.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\CalculadoraTest\\ValidacoesStringTests.cs",
+              "RelativeDocumentMoniker": "CalculadoraTest\\ValidacoesStringTests.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\CalculadoraTest\\ValidacoesStringTests.cs",
+              "RelativeToolTip": "CalculadoraTest\\ValidacoesStringTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T18:21:23.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ValidacaoString.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\Calculadora\\Services\\ValidacaoString.cs",
+              "RelativeDocumentMoniker": "Calculadora\\Services\\ValidacaoString.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\Calculadora\\Services\\ValidacaoString.cs",
+              "RelativeToolTip": "Calculadora\\Services\\ValidacaoString.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T18:19:15.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculadoraTests.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\CalculadoraTest\\CalculadoraTests.cs",
+              "RelativeDocumentMoniker": "CalculadoraTest\\CalculadoraTests.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\CalculadoraTest\\CalculadoraTests.cs",
+              "RelativeToolTip": "CalculadoraTest\\CalculadoraTests.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAADwvzMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T14:48:32.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\Calculadora\\Program.cs",
+              "RelativeDocumentMoniker": "Calculadora\\Program.cs",
+              "ToolTip": "D:\\repositories\\dio-bootcamp\\desenvolvimento-orientado-testes\\ModuloTestesDIO\\Calculadora\\Program.cs",
+              "RelativeToolTip": "Calculadora\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T14:40:14.032Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

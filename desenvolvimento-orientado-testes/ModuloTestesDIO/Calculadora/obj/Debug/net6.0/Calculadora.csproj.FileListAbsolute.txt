@@ -1,0 +1,15 @@
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\bin\Debug\net6.0\Calculadora.exe
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\bin\Debug\net6.0\Calculadora.deps.json
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\bin\Debug\net6.0\Calculadora.runtimeconfig.json
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\bin\Debug\net6.0\Calculadora.dll
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\bin\Debug\net6.0\Calculadora.pdb
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.GeneratedMSBuildEditorConfig.editorconfig
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.AssemblyInfoInputs.cache
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.AssemblyInfo.cs
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.csproj.CoreCompileInputs.cache
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.sourcelink.json
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.dll
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\refint\Calculadora.dll
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.pdb
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\Calculadora.genruntimeconfig.cache
+D:\repositories\dio-bootcamp\desenvolvimento-orientado-testes\ModuloTestesDIO\Calculadora\obj\Debug\net6.0\ref\Calculadora.dll
