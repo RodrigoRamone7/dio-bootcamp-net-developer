@@ -763,9 +763,136 @@ Containers podem ter vida curta como o caso do hello-world ou pode permanecer em
 
 Vamos agora executar um container de sistema operacional no docker.
 
+#### Exemplificando execução de container
+
 1. Digite o comando `docker pull ubuntu` e aguarde o download
 ![Download da imagem do ubuntu](images/docker-ubuntu.png)
 2. Digite o comando `docker run ubuntu`
 3. Digite o comando `docker ps -a`
 ![Containers executados](images/docker-ubuntu-run.png)
 Observe que o container não está em execução, mas foi executado e logo se encerrou.
+4. Digite o comando `docker run ubuntu sleep 10`
+![Rodando container por 10](images/docker-ubuntu-run-sleep.png)
+Observe que o cursor ficará preso em uma execução por 10 segundos
+5. Digitando novamente `docker ps -a`
+![Containers executados](images/docker-hello-world-docker-ps-sleep.png)
+Podemos notar que o container foi executado com comando `sleep 10`
+6. Digite o comando `docker run ubuntu sleep 1500`
+Assim o container ficará em execução por 1500 segundos
+7. Abra outro terminal e digite `docker ps`
+![Container executando](images/docker-hello-world-docker-ps-1500.png)
+Agora temos um container em execução
+8. No outro terminal aberto digite o comando `docker stop vibrant_dirac`
+![Parando container](images/docker-ubuntu-stop.png)
+Podemos parar um container especificando o container id ou name. Neste caso utilizamos o name gerado automaticamente pelo docker.
+
+#### Executando container em modo interativo
+
+Até o momento executamos o container de ubuntu de modo que ele é executado e encerrado, travando o cursor do servidor por alguns segundos. Dessa forma não temos um terminal como numa máquina virtual para utilizar.
+
+![Container ubuntu interativo](images/docker-ubuntu-run-it.png)
+Executando o comando `docker run -it ubuntu`, podemos observar que o terminal mudou seu login para `root@b4706bf75a40`.
+Agora estamos executando um containter interativo e com terminal integrado. Podemos fazer instalações configurações dentro deste container como um sistema operacional ubuntu comum.
+
+![Saindo do container](images/docker-ubuntu-run-it-exit.png)
+Se digitarmos um `exit` no terminal deste container, vamos encerrar a execução do container voltando o sistema operacional para o seu estado anterior.
+
+#### Executando aplicações no container
+
+Sempre que executarmos um container vamos executa-lo em background. Para isso utilize o comando `docker run -dti ubuntu`.
+
+![Container em execução background](images/docker-ubuntu-dti.png)
+Executando o container será printado o id completo dele e podemos observar que nosso container está em execução.
+
+![Executando container](images/docker-ubuntu-exec-bash.png)
+Vamos executar este container com o comando `docker exec -it 030 /bin/bash`.
+Podemos observar que utilizamos somente os 3 primeiros digitos do ID pois não possuimos outro container com ID parecido.
+
+![Tentando executar e instalar nano](images/docker-ubuntu-nano.png)
+Se tentarmos executar o nano neste container ele não será encontrado e também não é possível obte-lo, pois antes disso precisamos atualizar as dependências do nosso container.
+
+![Realizando update](images/docker-ubuntu-update.png)
+Para atualizar as dependências vamos executar o comando `apt update` e `apt upgrade -y` e aguardar sua instalação.
+
+![Instalando nano](images/docker-ubuntu-install-nano.png)
+Agora podemos executar o comando `apt -y install nano` para instalar o aplicativo.
+
+![Executando o nano no container](images/docker-ubuntu-nano-instalado.png)
+A partir de agora teremos o nano instalado em nosso container.
+
+![Container em execução](images/docker-ubuntu-container-exec.png)
+Saindo do container podemos observar que o nosso container permanece em execução.
+
+#### Excluindo e nomenado containers
+
+Quando estamos executando um container, ele permanece consumindo recursos de nossa máquina, então o ideal que é se não estivermos utilizando nosso container, devemos parar a execução deste container.
+
+![Parando execução do container](images/docker-ubuntu-container-stop.png)
+Vamos executar o comando `docker stop 030` e parar a execução do nosso container.
+
+![Excluindo containers](images/docker-ubuntu-exclude.png)
+Também é recomendável excluir containers que não estão mais sendo utilizados por meio do comando `docker rm {id}`.
+
+![Excluindo imagens](images/docker-ubuntu-exclude-images.png)
+Também é recomendável excluir imagens que não estão mais sendo utilizadas para não consumir espaço em nosso sistema.
+Utilize o comando `docker rmi {nome-da-imagem}`.
+
+![Rodando imagem inexistente](images/docker-ubuntu-centos.png)
+Caso tentarmos rodar uma imagem que não existe, o docker vai avisar que não existe a imagem, mas automaticamente vai baixar e executar este container.
+
+![Nomeando containers](images/docker-ubuntu-nomeando.png)
+Podemos dar nomes aos nossos containers para facilitar a identificação.
+Utilize o comando `dokcer run -dti --name {nome-do-container} ubuntu`.
+
+#### Copiando arquivos para dentro do container
+
+Criamos alguns containers anteriomente e queremos agora copiar alguns arquivos para o container `Ubuntu-A`.
+
+![Criando arquivos](images/docker-ubuntu-criando-arquivos.png)
+Vamos criar alguns arquivos de texto em nosso servidor para transferir para dentro do container.
+
+![Criando diretório destino](images/docker-ubuntu-destino.png)
+Vamos criar também um diretório destino dentro do nosso container.
+
+![Copiando arquivos](images/docker-ubuntu-cp-destino.png)
+Ao utilizar o comando `docker cp {caminho-do-arquivo-local} {container}:/{diretório-destino}` vamos copiar o arquivo para dentro do nosso container.
+
+#### Copiando arquivos para fora do container
+
+Da mesma forma que copiamos para dentro do container, o comando para copiar de dentro para fora do container somente precisamos inverter a ordem de caminhos.
+Utilizaremos o comando `docker cp {container-de-origem}:/{cainho-do-arquivo} {caminho-de-destino}`
+
+![Arquivo copiado para fora](images/docker-ubuntu-copiando-fora.png)
+Na imagem acima podemos observar o arquivo no diretório da nossa máquina local.
+
+### Criando um container do MySQL
+
+Vamos agora criar um container de MySQL. Poderiamos sim dentro de um container ubuntu instalar o MySQL e roda-lo dentro dele, mas para tornar este container mais compacto e economizar recursos, vamos utilizar uma imagem do MySQL disponível na Hub Docker.
+
+Acesse o link da [imagem MySQL](https://hub.docker.com/_/mysql)
+
+Para utilizar esta imagem, precisamos definir algumas variáveis de ambiente especificadas na página da imagem na sessão __Environment Variables__.
+Neste caso vamos especificar a variável __MYSQL_ROOT_PASSWORD__
+1. Baixe a imagem `docker pull mysql`
+2. Rode o container especificando a variável de ambiente e liberando uma porta de acesso
+Para isso vamos utilizar o comando `docker run -e MYSQL_ROOT_PASSWORD=Senha123 --name mysql-A -d -p 3306:3306 mysql`
+
+Note que em `-e` especificamos nossa variável de ambiente e em `-p` especificamos a porta de acesso que será utilizada.
+
+![Rodando container](images/docker-mysql-rodando.png)
+Note que agora temos um container que utiliza a porta que especificamos no momento me que rodamos o container.
+
+![Container MySQL](images/docker-mysql-container.png)
+Se executarmos o container e der um `ls` podemos ver os arquivos contidos no container e digitando a linha `mysql -u root -p --protocol=tcp` vamos entrar no MySQL dentro no container, podendo assim fazer as configurações necessárias para conexão no banco e criação de tabelas.
+
+![Databases](images/docker-mysql-databases.png)
+Criamos um banco com a query `CREATE DATABASE aula;` e então mostramos este banco com a query `show databases;`. Observe que temos uma tabela com o banco aula criado.
+
+![Ip do docker](images/docker-mysql-ip.png)
+Se dermos um `ip a` no nosso terminal, podemos observar que no momento da instalação do docker foi criado um dispositivo de rede `docker0` que utiliza a faixa de ip `172.17.0.1` e todo container criado também recebe um endereço nesta mesma faixa de ip.
+
+![Inspencionando container](images/docker-mysql-inspect.png)
+Ao digitar o comando `docker inspect mysql-A` será retornado uma série de informações a respeito do nosso container, incluindo seu ´IPAddress: "172.17.0.4"´ e a porta que especificamos lá em sua criação `"HostPort: "3306"`.
+
+![Conectando ao banco de dados](images/docker-mysql-workbench.png)
+no MySQL Workbench vamos configurar nossa conexão com o container.
