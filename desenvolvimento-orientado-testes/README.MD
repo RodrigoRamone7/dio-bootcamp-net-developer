@@ -1,3 +1,17 @@
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+
+- [Trabalhando com Desenvolvimento Orientado a Testes](#trabalhando-com-desenvolvimento-orientado-a-testes)
+   * [Testes de software](#testes-de-software)
+      + [Testes únitários](#testes-únitários)
+      + [Frameworks de teste](#frameworks-de-teste)
+   * [Teste de software na prática](#teste-de-software-na-prática)
+      + [Criando um Projeto com xUnit](#criando-um-projeto-com-xunit)
+      + [Criando um cenário de teste](#criando-um-cenário-de-teste)
+         - [Criando classe de teste](#criando-classe-de-teste)
+      + [Theory](#theory)
+
+<!-- TOC end -->
+
 # Trabalhando com Desenvolvimento Orientado a Testes
 
 ---
